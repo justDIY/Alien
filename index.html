@@ -1,15 +1,70 @@
 <!DOCTYPE html>
-<!-- saved from url=(0304)https://5e6d5fce-8388-4762-b3d8-aa9c783c03e5.claudeusercontent.com/v1/design/projects/5e6d5fce-8388-4762-b3d8-aa9c783c03e5/serve/MindMap-Standalone.html?t=fcc3094a9a5aaa45924e6826404db4ee43867dfe825182c1344a8fdfc9dd323b.0bd3f4f7-898c-4457-8a7d-ec799151fd0f.dc536f2c-a882-40a6-8f13-8df98151e7e2.1777140739 -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>window.__resources = {};</script>
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DBA Literature Review Mindmap — Enterprise AI Governance</title>
-<script src="blob:https://5e6d5fce-8388-4762-b3d8-aa9c783c03e5.claudeusercontent.com/6bd05963-92a9-4fc9-b057-44c860db8feb"></script>
-<script src="blob:https://5e6d5fce-8388-4762-b3d8-aa9c783c03e5.claudeusercontent.com/d5b37c6f-e5e7-4c3b-9fe8-1b1bdb6c5224"></script>
-<script src="blob:https://5e6d5fce-8388-4762-b3d8-aa9c783c03e5.claudeusercontent.com/c7333c20-36e6-414f-9e77-39ef279c25eb"></script>
-<script src="blob:https://5e6d5fce-8388-4762-b3d8-aa9c783c03e5.claudeusercontent.com/fb3a3588-c3eb-41a6-b484-8a350a30627b"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="mindmap-data.js"></script>
 
-
+<template id="__bundler_thumbnail" data-bg-color="#0D1117">
+  <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="700" fill="#0D1117"/>
+    <!-- Block A -->
+    <rect x="60" y="80" width="170" height="44" rx="8" fill="#1E3A5F"/>
+    <rect x="60" y="140" width="170" height="28" rx="5" fill="#172D4A" stroke="#2D5A8E" stroke-width="1"/>
+    <rect x="60" y="176" width="170" height="28" rx="5" fill="#172D4A" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="60" y="212" width="170" height="28" rx="5" fill="#172D4A" stroke="#2D5A8E" stroke-width="1"/>
+    <rect x="60" y="248" width="170" height="28" rx="5" fill="#172D4A" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="60" y="284" width="170" height="28" rx="5" fill="#172D4A" stroke="#2D5A8E" stroke-width="1"/>
+    <!-- Arrow A->B -->
+    <line x1="232" y1="102" x2="268" y2="102" stroke="rgba(255,255,255,0.4)" stroke-width="2" marker-end="url(#arr)"/>
+    <!-- Block B -->
+    <rect x="270" y="80" width="170" height="44" rx="8" fill="#1B4332"/>
+    <rect x="270" y="140" width="170" height="28" rx="5" fill="#163829" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="270" y="176" width="170" height="28" rx="5" fill="#163829" stroke="#2D6B4A" stroke-width="1"/>
+    <rect x="270" y="212" width="170" height="28" rx="5" fill="#163829" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="270" y="248" width="170" height="28" rx="5" fill="#163829" stroke="#2D6B4A" stroke-width="1"/>
+    <!-- Arrow B->C -->
+    <line x1="442" y1="102" x2="478" y2="102" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <!-- Block C -->
+    <rect x="480" y="80" width="170" height="44" rx="8" fill="#3B1F5E"/>
+    <rect x="480" y="140" width="170" height="28" rx="5" fill="#30184F" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="480" y="176" width="170" height="28" rx="5" fill="#30184F" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="480" y="212" width="170" height="28" rx="5" fill="#30184F" stroke="#5B3490" stroke-width="1"/>
+    <!-- Arrow C->D -->
+    <line x1="652" y1="102" x2="688" y2="102" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <!-- Block D -->
+    <rect x="690" y="80" width="170" height="44" rx="8" fill="#5C1A1A"/>
+    <rect x="690" y="140" width="170" height="28" rx="5" fill="#4E1515" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="690" y="176" width="170" height="28" rx="5" fill="#4E1515" stroke="#8B2E2E" stroke-width="1"/>
+    <rect x="690" y="212" width="170" height="28" rx="5" fill="#4E1515" stroke="#B8860B" stroke-width="1.2"/>
+    <rect x="690" y="248" width="170" height="28" rx="5" fill="#4E1515" stroke="#8B2E2E" stroke-width="1"/>
+    <!-- Arrow D->Contrib -->
+    <line x1="862" y1="102" x2="898" y2="102" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <!-- Contribution node -->
+    <rect x="900" y="72" width="190" height="260" rx="10" fill="#1A1200" stroke="#B8860B" stroke-width="2"/>
+    <rect x="900" y="72" width="190" height="54" rx="10" fill="#B8860B"/>
+    <text x="995" y="103" text-anchor="middle" fill="white" font-size="13" font-weight="700" font-family="Georgia">★ ALiEn</text>
+    <rect x="912" y="138" width="166" height="40" rx="6" fill="rgba(184,134,11,0.12)" stroke="rgba(184,134,11,0.3)" stroke-width="1"/>
+    <rect x="912" y="186" width="166" height="40" rx="6" fill="rgba(184,134,11,0.12)" stroke="rgba(184,134,11,0.3)" stroke-width="1"/>
+    <rect x="912" y="234" width="166" height="40" rx="6" fill="rgba(184,134,11,0.12)" stroke="rgba(184,134,11,0.3)" stroke-width="1"/>
+    <rect x="912" y="282" width="166" height="40" rx="6" fill="rgba(184,134,11,0.12)" stroke="rgba(184,134,11,0.3)" stroke-width="1"/>
+    <!-- Cross links (amber dashed) -->
+    <path d="M 232 155 Q 480 50 480 155" stroke="#FFA500" stroke-width="1.5" stroke-dasharray="5,4" fill="none" opacity="0.6"/>
+    <path d="M 442 190 Q 530 50 530 155" stroke="#FFA500" stroke-width="1.5" stroke-dasharray="5,4" fill="none" opacity="0.6"/>
+    <!-- Title -->
+    <text x="600" y="580" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="14" font-style="italic" font-family="Georgia">DBA Literature Review — Enterprise AI Governance</text>
+    <defs>
+      <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.5)"/>
+      </marker>
+    </defs>
+  </svg>
+</template>
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -195,775 +250,9 @@
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
 </style>
-<script>"use strict";
-
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-var _React = React,
-  useState = _React.useState,
-  useEffect = _React.useEffect,
-  useRef = _React.useRef,
-  useCallback = _React.useCallback,
-  useMemo = _React.useMemo;
-
-// ── Layout constants ──────────────────────────────────────────────
-var COL_W = 300;
-var COL_GAP = 150;
-var COL_STARTS = [0, 1, 2, 3].map(function (i) {
-  return 30 + i * (COL_W + COL_GAP);
-});
-var COL_CENTERS = COL_STARTS.map(function (s) {
-  return s + COL_W / 2;
-});
-// [180, 630, 1080, 1530]
-var CONTRIB_X = 30 + 4 * (COL_W + COL_GAP);
-var CONTRIB_CX = CONTRIB_X + 165;
-var HEADER_Y = 52;
-var HEADER_H = 60;
-var PAPERS_START = HEADER_Y + HEADER_H + 18;
-var CORE_H = 88;
-var STRONG_H = 74;
-var BG_H = 64;
-var CARD_GAP = 7;
-var TIER_GAP = 16;
-var CANVAS_W = CONTRIB_X + 360;
-var _window$MINDMAP_DATA = window.MINDMAP_DATA,
-  BLOCKS = _window$MINDMAP_DATA.BLOCKS,
-  CROSS_LINKS = _window$MINDMAP_DATA.CROSS_LINKS,
-  BLOCK_ARROWS = _window$MINDMAP_DATA.BLOCK_ARROWS;
-
-// ── Compute paper positions ────────────────────────────────────────
-function computePositions(showBgMap) {
-  var pos = {};
-  var colHeights = {};
-  BLOCKS.forEach(function (block, bi) {
-    var cx = COL_CENTERS[bi];
-    var y = PAPERS_START;
-    ['core', 'strong', 'background'].forEach(function (tier) {
-      var papers = block.papers.filter(function (p) {
-        return p.tier === tier;
-      });
-      if (!papers.length) return;
-      var h = tier === 'core' ? CORE_H : tier === 'strong' ? STRONG_H : BG_H;
-      var showBg = showBgMap[block.id];
-      var visible = tier !== 'background' || showBg;
-      papers.forEach(function (paper) {
-        pos[paper.id] = {
-          x: cx,
-          y: y + h / 2,
-          blockIdx: bi,
-          visible: visible || tier !== 'background'
-        };
-        if (visible) y += h + CARD_GAP;
-      });
-      if (visible) y += TIER_GAP;
-    });
-    colHeights[block.id] = y;
-  });
-  pos['CONTRIB'] = {
-    x: CONTRIB_CX,
-    y: HEADER_Y + 240,
-    blockIdx: 4
-  };
-  return {
-    pos: pos,
-    colHeights: colHeights
-  };
-}
-
-// ── SVG connections ────────────────────────────────────────────────
-function Connections(_ref) {
-  var pos = _ref.pos,
-    showBg = _ref.showBg;
-  var arrows = [];
-
-  // Block-to-block main arrows (between headers)
-  var arrowY = HEADER_Y + HEADER_H / 2;
-  BLOCK_ARROWS.forEach(function (arrow, i) {
-    var x1 = COL_STARTS[i] + COL_W + 2;
-    var x2 = i < 3 ? COL_STARTS[i + 1] - 2 : CONTRIB_X - 2;
-    var mx = (x1 + x2) / 2;
-    var my = arrowY - 22;
-    arrows.push(/*#__PURE__*/React.createElement("g", {
-      key: "main-".concat(i)
-    }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("marker", {
-      id: "arr-".concat(i),
-      markerWidth: "8",
-      markerHeight: "6",
-      refX: "7",
-      refY: "3",
-      orient: "auto"
-    }, /*#__PURE__*/React.createElement("polygon", {
-      points: "0 0, 8 3, 0 6",
-      fill: "rgba(255,255,255,0.5)"
-    }))), /*#__PURE__*/React.createElement("line", {
-      x1: x1,
-      y1: arrowY,
-      x2: x2,
-      y2: arrowY,
-      stroke: "rgba(255,255,255,0.28)",
-      strokeWidth: "1.5",
-      markerEnd: "url(#arr-".concat(i, ")")
-    }), /*#__PURE__*/React.createElement("text", {
-      x: mx,
-      y: my,
-      textAnchor: "middle",
-      fill: "rgba(255,255,255,0.42)",
-      fontSize: "8.5",
-      fontStyle: "italic",
-      fontFamily: "Georgia, serif"
-    }, arrow.label.length > 60 ? arrow.label.slice(0, 57) + '…' : arrow.label)));
-  });
-
-  // Cross-block dashed amber links
-  CROSS_LINKS.forEach(function (link, i) {
-    var fromPos = pos[link.from];
-    var toPos = pos[link.to];
-    if (!fromPos || !toPos) return;
-    var x1 = COL_STARTS[fromPos.blockIdx] + COL_W;
-    var y1 = fromPos.y;
-    var x2 = toPos.blockIdx === 4 ? CONTRIB_X : COL_STARTS[toPos.blockIdx];
-    var y2 = toPos.y;
-    var cp1x = x1 + (x2 - x1) * 0.4;
-    var cp1y = y1 - 35;
-    var cp2x = x1 + (x2 - x1) * 0.6;
-    var cp2y = y2 - 35;
-    var d = "M ".concat(x1, " ").concat(y1, " C ").concat(cp1x, " ").concat(cp1y, ", ").concat(cp2x, " ").concat(cp2y, ", ").concat(x2, " ").concat(y2);
-    var midT = 0.5;
-    var mx = cp1x * 0.25 + cp2x * 0.25 + x1 * 0.125 + x2 * 0.125 + (cp1x + cp2x) * 0.125;
-    var my2 = y1 * 0.5 + y2 * 0.5 - 40;
-    arrows.push(/*#__PURE__*/React.createElement("g", {
-      key: "cross-".concat(i),
-      opacity: "0.8"
-    }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("marker", {
-      id: "xarr-".concat(i),
-      markerWidth: "7",
-      markerHeight: "5",
-      refX: "6",
-      refY: "2.5",
-      orient: "auto"
-    }, /*#__PURE__*/React.createElement("polygon", {
-      points: "0 0, 7 2.5, 0 5",
-      fill: "#FFA500"
-    }))), /*#__PURE__*/React.createElement("path", {
-      d: d,
-      fill: "none",
-      stroke: "#FFA500",
-      strokeWidth: "1.3",
-      strokeDasharray: "5,4",
-      markerEnd: "url(#xarr-".concat(i, ")"),
-      opacity: "0.7"
-    }), /*#__PURE__*/React.createElement("text", {
-      x: (x1 + x2) / 2,
-      y: my2,
-      textAnchor: "middle",
-      fill: "#FFA500",
-      fontSize: "8",
-      fontStyle: "italic",
-      fontFamily: "Georgia, serif",
-      opacity: "0.8"
-    }, link.label)));
-  });
-  return /*#__PURE__*/React.createElement("g", null, arrows);
-}
-
-// ── Paper card ─────────────────────────────────────────────────────
-function PaperCard(_ref2) {
-  var paper = _ref2.paper,
-    block = _ref2.block,
-    onSelect = _ref2.onSelect,
-    style = _ref2.style;
-  var isCore = paper.tier === 'core';
-  var isStrong = paper.tier === 'strong';
-  var h = isCore ? CORE_H : isStrong ? STRONG_H : BG_H;
-  return /*#__PURE__*/React.createElement("div", {
-    className: "paper-card ".concat(paper.tier, " ").concat(isCore ? 'gold-glow' : ''),
-    onClick: function onClick() {
-      return onSelect({
-        paper: paper,
-        block: block
-      });
-    },
-    style: _objectSpread({
-      height: h,
-      background: block.cardColor,
-      borderColor: isCore ? block.borderColor : 'rgba(255,255,255,0.08)',
-      boxShadow: isCore ? "0 0 0 1.5px #B8860B44, 0 3px 14px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04)" : "0 2px 8px rgba(0,0,0,0.35)"
-    }, style)
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "paper-icon"
-  }, /*#__PURE__*/React.createElement("span", null, "\uD83D\uDCC4"), paper.star && /*#__PURE__*/React.createElement("span", {
-    className: "paper-star"
-  }, paper.star)), /*#__PURE__*/React.createElement("div", {
-    className: "paper-title",
-    style: {
-      fontSize: isCore ? 11 : 10.5
-    }
-  }, paper.title), /*#__PURE__*/React.createElement("div", {
-    className: "paper-meta"
-  }, paper.authors, ", ", paper.year, " \xB7 ", /*#__PURE__*/React.createElement("em", null, paper.journal)));
-}
-
-// ── Block column ───────────────────────────────────────────────────
-function BlockColumn(_ref3) {
-  var block = _ref3.block,
-    colIdx = _ref3.colIdx,
-    onSelect = _ref3.onSelect,
-    showBg = _ref3.showBg,
-    onToggleBg = _ref3.onToggleBg,
-    topY = _ref3.topY;
-  var left = COL_STARTS[colIdx];
-  var corePapers = block.papers.filter(function (p) {
-    return p.tier === 'core';
-  });
-  var strongPapers = block.papers.filter(function (p) {
-    return p.tier === 'strong';
-  });
-  var bgPapers = block.papers.filter(function (p) {
-    return p.tier === 'background';
-  });
-  var cardY = PAPERS_START;
-  var coreH = CORE_H + CARD_GAP;
-  var strongH = STRONG_H + CARD_GAP;
-  var bgH = BG_H + CARD_GAP;
-  var coreItems = corePapers.map(function (p, i) {
-    var y = cardY + i * coreH;
-    return {
-      paper: p,
-      y: y
-    };
-  });
-  cardY += corePapers.length * coreH + TIER_GAP;
-  var strongItems = strongPapers.map(function (p, i) {
-    var y = cardY + i * strongH;
-    return {
-      paper: p,
-      y: y
-    };
-  });
-  cardY += strongPapers.length * strongH + TIER_GAP;
-  var bgItems = bgPapers.map(function (p, i) {
-    var y = cardY + i * bgH;
-    return {
-      paper: p,
-      y: y
-    };
-  });
-  var toggleY = cardY;
-  return /*#__PURE__*/React.createElement("div", {
-    className: "block-col",
-    style: {
-      left: left,
-      top: topY || 0
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "block-header",
-    style: {
-      position: 'absolute',
-      top: HEADER_Y,
-      left: 0,
-      background: "linear-gradient(135deg, ".concat(block.color, ", ").concat(block.color, "cc)"),
-      boxShadow: "0 4px 20px ".concat(block.color, "55, inset 0 1px 0 rgba(255,255,255,0.1)")
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "block-header-title"
-  }, block.title), /*#__PURE__*/React.createElement("div", {
-    className: "block-header-sub"
-  }, block.subtitle)), coreItems.map(function (_ref4) {
-    var paper = _ref4.paper,
-      y = _ref4.y;
-    return /*#__PURE__*/React.createElement("div", {
-      key: paper.id,
-      style: {
-        position: 'absolute',
-        top: y,
-        left: 0
-      }
-    }, /*#__PURE__*/React.createElement(PaperCard, {
-      paper: paper,
-      block: block,
-      onSelect: onSelect
-    }));
-  }), strongPapers.length > 0 && /*#__PURE__*/React.createElement("div", {
-    style: {
-      position: 'absolute',
-      top: PAPERS_START + corePapers.length * coreH + 4,
-      left: 0,
-      width: COL_W,
-      fontSize: 8,
-      color: 'rgba(255,255,255,0.28)',
-      textTransform: 'uppercase',
-      letterSpacing: '0.1em',
-      fontWeight: 700
-    }
-  }, "Strongly Relevant"), strongItems.map(function (_ref5) {
-    var paper = _ref5.paper,
-      y = _ref5.y;
-    return /*#__PURE__*/React.createElement("div", {
-      key: paper.id,
-      style: {
-        position: 'absolute',
-        top: y,
-        left: 0
-      }
-    }, /*#__PURE__*/React.createElement(PaperCard, {
-      paper: paper,
-      block: block,
-      onSelect: onSelect
-    }));
-  }), bgPapers.length > 0 && /*#__PURE__*/React.createElement("div", {
-    className: "bg-toggle",
-    style: {
-      position: 'absolute',
-      top: toggleY,
-      left: 0
-    },
-    onClick: function onClick() {
-      return onToggleBg(block.id);
-    }
-  }, showBg ? "\u25B2 Hide ".concat(bgPapers.length, " background papers") : "\u25BC Show ".concat(bgPapers.length, " background papers")), showBg && bgItems.map(function (_ref6) {
-    var paper = _ref6.paper,
-      y = _ref6.y;
-    return /*#__PURE__*/React.createElement("div", {
-      key: paper.id,
-      style: {
-        position: 'absolute',
-        top: y + 46,
-        left: 0
-      }
-    }, /*#__PURE__*/React.createElement(PaperCard, {
-      paper: paper,
-      block: block,
-      onSelect: onSelect
-    }));
-  }));
-}
-
-// ── Contribution node ──────────────────────────────────────────────
-function ContributionNode() {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "contrib-node",
-    style: {
-      position: 'absolute',
-      left: CONTRIB_X,
-      top: HEADER_Y
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "contrib-header"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "contrib-title"
-  }, "\u2605 ENTERPRISE STORY + ALiEn"), /*#__PURE__*/React.createElement("div", {
-    className: "contrib-subtitle"
-  }, "A versioned, machine-addressable organizational mandate artifact \u2014 the computable constitution AI agents reference at runtime, and governance actors inspect, adjudicate against, and update.")), /*#__PURE__*/React.createElement("div", {
-    className: "contrib-body"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "actor-node"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "actor-header"
-  }, "\uD83C\uDFDB\uFE0F ARCHITECT"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-desc"
-  }, "Authors and proposes Story version updates. Cannot activate unilaterally. Submits Ratification Proposals \u2192 Human Governance Owner.")), /*#__PURE__*/React.createElement("div", {
-    className: "contrib-arrow"
-  }, "\u2195"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-node"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "actor-header"
-  }, "\uD83D\uDC41\uFE0F SENTINEL"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-desc"
-  }, "Monitors production behavior continuously. Produces Evidence Packets linked to Story clauses \u2192 Oracle.")), /*#__PURE__*/React.createElement("div", {
-    className: "contrib-arrow"
-  }, "\u2195"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-node"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "actor-header"
-  }, "\u2696\uFE0F ORACLE"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-desc"
-  }, "Calibrates autonomy posture. Reversible intervention ladder. Escalates to Human Governance Owner when threshold exceeded.")), /*#__PURE__*/React.createElement("div", {
-    className: "contrib-arrow"
-  }, "\u2195"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-node"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "actor-header"
-  }, "\uD83D\uDC64 HUMAN GOVERNANCE OWNER"), /*#__PURE__*/React.createElement("div", {
-    className: "actor-desc"
-  }, "Constitutional ratification authority. Approves Story changes. Ratifies \u2192 Enterprise Story. Receives Oracle escalations."))));
-}
-
-// ── Side panel ─────────────────────────────────────────────────────
-function SidePanel(_ref7) {
-  var selection = _ref7.selection,
-    onClose = _ref7.onClose;
-  var paper = selection.paper,
-    block = selection.block;
-  return /*#__PURE__*/React.createElement("div", {
-    className: "side-panel"
-  }, /*#__PURE__*/React.createElement("button", {
-    className: "panel-close",
-    onClick: onClose
-  }, "\u2715 Close"), /*#__PURE__*/React.createElement("div", {
-    className: "panel-block-tag",
-    style: {
-      background: block.color + '33',
-      color: block.borderColor,
-      border: "1px solid ".concat(block.borderColor, "55")
-    }
-  }, block.title, " \u2014 ", block.subtitle), paper.star && /*#__PURE__*/React.createElement("div", {
-    className: "panel-star"
-  }, paper.star), /*#__PURE__*/React.createElement("div", {
-    className: "panel-title"
-  }, paper.title), /*#__PURE__*/React.createElement("div", {
-    className: "panel-meta"
-  }, paper.authors, ", ", paper.year, " \xB7 ", /*#__PURE__*/React.createElement("em", null, paper.journal)), /*#__PURE__*/React.createElement("div", {
-    className: "panel-divider"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-label"
-  }, "\u25B8 What it says"), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-text"
-  }, paper.what)), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-label"
-  }, "\u25B8 How it connects"), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-text"
-  }, paper.how)), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-label"
-  }, "\u25B8 Why here"), /*#__PURE__*/React.createElement("div", {
-    className: "panel-section-text"
-  }, paper.why)), /*#__PURE__*/React.createElement("div", {
-    className: "panel-divider"
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 9,
-      color: '#555',
-      fontStyle: 'italic',
-      textAlign: 'center'
-    }
-  }, "Tier: ", paper.tier.charAt(0).toUpperCase() + paper.tier.slice(1), paper.crossRef ? ' · Cross-referenced in argument spine' : ''));
-}
-
-// ── Legend ─────────────────────────────────────────────────────────
-function Legend() {
-  return /*#__PURE__*/React.createElement("div", {
-    className: "legend"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "legend-title"
-  }, "Map Key"), BLOCKS.map(function (b) {
-    return /*#__PURE__*/React.createElement("div", {
-      key: b.id,
-      className: "legend-row"
-    }, /*#__PURE__*/React.createElement("div", {
-      className: "legend-dot",
-      style: {
-        background: b.color
-      }
-    }), /*#__PURE__*/React.createElement("span", null, b.title, " \u2014 ", b.subtitle.split(' ').slice(0, 3).join(' '), "\u2026"));
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "legend-row"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "legend-dot",
-    style: {
-      background: '#B8860B'
-    }
-  }), /*#__PURE__*/React.createElement("span", null, "Proposed Contribution (ALiEn)")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      height: 6
-    }
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "legend-row"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 20,
-      height: 2,
-      background: 'rgba(255,255,255,0.4)'
-    }
-  }), /*#__PURE__*/React.createElement("span", null, "Block transition arrows")), /*#__PURE__*/React.createElement("div", {
-    className: "legend-row"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 20,
-      height: 2,
-      background: '#FFA500',
-      borderTop: '1px dashed #FFA500'
-    }
-  }), /*#__PURE__*/React.createElement("span", null, "Cross-block theoretical links")), /*#__PURE__*/React.createElement("div", {
-    className: "legend-row"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 14,
-      height: 14,
-      border: '1.5px solid #B8860B',
-      borderRadius: 3,
-      boxShadow: '0 0 5px #B8860B55'
-    }
-  }), /*#__PURE__*/React.createElement("span", null, "Core / anchor paper")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 9,
-      color: '#444',
-      marginTop: 6,
-      fontStyle: 'italic'
-    }
-  }, "Click any card to expand details"));
-}
-
-// ── Main app ───────────────────────────────────────────────────────
-function App() {
-  var _useState = useState(null),
-    _useState2 = _slicedToArray(_useState, 2),
-    selected = _useState2[0],
-    setSelected = _useState2[1];
-  var _useState3 = useState({}),
-    _useState4 = _slicedToArray(_useState3, 2),
-    showBg = _useState4[0],
-    setShowBg = _useState4[1];
-  var _useState5 = useState({
-      x: 0,
-      y: 0,
-      scale: 0.48
-    }),
-    _useState6 = _slicedToArray(_useState5, 2),
-    transform = _useState6[0],
-    setTransform = _useState6[1];
-  var _useState7 = useState(false),
-    _useState8 = _slicedToArray(_useState7, 2),
-    dragging = _useState8[0],
-    setDragging = _useState8[1];
-  var dragRef = useRef(null);
-  var wrapRef = useRef(null);
-
-  // Centre map on load
-  useEffect(function () {
-    var vw = window.innerWidth;
-    var vh = window.innerHeight;
-    setTransform({
-      x: vw * 0.02,
-      y: vh * 0.04,
-      scale: 0.46
-    });
-  }, []);
-  var _useMemo = useMemo(function () {
-      return computePositions(showBg);
-    }, [showBg]),
-    pos = _useMemo.pos;
-
-  // Compute canvas height
-  var canvasHeight = useMemo(function () {
-    var maxH = 200;
-    BLOCKS.forEach(function (block, bi) {
-      var y = PAPERS_START;
-      ['core', 'strong', 'background'].forEach(function (tier) {
-        var papers = block.papers.filter(function (p) {
-          return p.tier === tier;
-        });
-        var h = tier === 'core' ? CORE_H : tier === 'strong' ? STRONG_H : BG_H;
-        var show = tier !== 'background' || showBg[block.id];
-        if (show) y += papers.length * (h + CARD_GAP) + TIER_GAP;else if (tier === 'background' && papers.length > 0) y += 46;
-      });
-      maxH = Math.max(maxH, y + 40);
-    });
-    return maxH + 60;
-  }, [showBg]);
-
-  // Pan
-  var onMouseDown = useCallback(function (e) {
-    if (e.target.closest('.paper-card') || e.target.closest('.side-panel') || e.target.closest('.toolbar') || e.target.closest('.legend') || e.target.closest('.bg-toggle') || e.target.closest('.contrib-node')) return;
-    dragRef.current = {
-      startX: e.clientX,
-      startY: e.clientY,
-      tx: transform.x,
-      ty: transform.y
-    };
-    setDragging(true);
-  }, [transform]);
-  var onMouseMove = useCallback(function (e) {
-    if (!dragRef.current) return;
-    setTransform(function (t) {
-      return _objectSpread(_objectSpread({}, t), {}, {
-        x: dragRef.current.tx + (e.clientX - dragRef.current.startX),
-        y: dragRef.current.ty + (e.clientY - dragRef.current.startY)
-      });
-    });
-  }, []);
-  var onMouseUp = useCallback(function () {
-    dragRef.current = null;
-    setDragging(false);
-  }, []);
-
-  // Zoom
-  var onWheel = useCallback(function (e) {
-    e.preventDefault();
-    var factor = e.deltaY < 0 ? 1.1 : 0.91;
-    var rect = wrapRef.current.getBoundingClientRect();
-    var mx = e.clientX - rect.left;
-    var my = e.clientY - rect.top;
-    setTransform(function (t) {
-      var newScale = Math.max(0.18, Math.min(2.2, t.scale * factor));
-      return {
-        scale: newScale,
-        x: mx - (mx - t.x) * (newScale / t.scale),
-        y: my - (my - t.y) * (newScale / t.scale)
-      };
-    });
-  }, []);
-  var zoomTo = function zoomTo(scale) {
-    var vw = window.innerWidth;
-    var vh = window.innerHeight;
-    setTransform({
-      x: vw * 0.02,
-      y: vh * 0.04,
-      scale: scale
-    });
-  };
-  var toggleBg = function toggleBg(blockId) {
-    setShowBg(function (prev) {
-      return _objectSpread(_objectSpread({}, prev), {}, _defineProperty({}, blockId, !prev[blockId]));
-    });
-  };
-  return /*#__PURE__*/React.createElement("div", {
-    ref: wrapRef,
-    className: "canvas-wrapper".concat(dragging ? ' dragging' : ''),
-    onMouseDown: onMouseDown,
-    onMouseMove: onMouseMove,
-    onMouseUp: onMouseUp,
-    onMouseLeave: onMouseUp,
-    onWheel: onWheel
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "canvas",
-    style: {
-      width: CANVAS_W,
-      height: canvasHeight,
-      transform: "translate(".concat(transform.x, "px, ").concat(transform.y, "px) scale(").concat(transform.scale, ")")
-    }
-  }, /*#__PURE__*/React.createElement("svg", {
-    style: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: CANVAS_W,
-      height: canvasHeight,
-      pointerEvents: 'none',
-      overflow: 'visible'
-    }
-  }, /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("filter", {
-    id: "glow"
-  }, /*#__PURE__*/React.createElement("feGaussianBlur", {
-    stdDeviation: "2",
-    result: "blur"
-  }), /*#__PURE__*/React.createElement("feComposite", {
-    "in": "SourceGraphic",
-    in2: "blur",
-    operator: "over"
-  }))), /*#__PURE__*/React.createElement(Connections, {
-    pos: pos,
-    showBg: showBg
-  })), BLOCKS.map(function (block, i) {
-    return /*#__PURE__*/React.createElement(BlockColumn, {
-      key: block.id,
-      block: block,
-      colIdx: i,
-      onSelect: setSelected,
-      showBg: showBg[block.id] || false,
-      onToggleBg: toggleBg
-    });
-  }), /*#__PURE__*/React.createElement(ContributionNode, null), /*#__PURE__*/React.createElement("div", {
-    className: "watermark",
-    style: {
-      bottom: 18,
-      position: 'absolute',
-      width: CANVAS_W
-    }
-  }, "DBA Literature Review \u2014 Grenoble \xC9cole de Management \u2014 RQ: How do enterprises ensure AI agents act in line with organizational mandate?")), /*#__PURE__*/React.createElement(Legend, null), selected && /*#__PURE__*/React.createElement(SidePanel, {
-    selection: selected,
-    onClose: function onClose() {
-      return setSelected(null);
-    }
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "toolbar"
-  }, /*#__PURE__*/React.createElement("button", {
-    className: "toolbar-btn",
-    onClick: function onClick() {
-      return zoomTo(0.32);
-    }
-  }, "Overview"), /*#__PURE__*/React.createElement("div", {
-    className: "toolbar-sep"
-  }), /*#__PURE__*/React.createElement("button", {
-    className: "toolbar-btn",
-    onClick: function onClick() {
-      return setTransform(function (t) {
-        return _objectSpread(_objectSpread({}, t), {}, {
-          scale: Math.max(0.18, t.scale * 0.83)
-        });
-      });
-    }
-  }, "\u2212"), /*#__PURE__*/React.createElement("div", {
-    className: "toolbar-zoom"
-  }, Math.round(transform.scale * 100), "%"), /*#__PURE__*/React.createElement("button", {
-    className: "toolbar-btn",
-    onClick: function onClick() {
-      return setTransform(function (t) {
-        return _objectSpread(_objectSpread({}, t), {}, {
-          scale: Math.min(2.2, t.scale * 1.2)
-        });
-      });
-    }
-  }, "+"), /*#__PURE__*/React.createElement("div", {
-    className: "toolbar-sep"
-  }), /*#__PURE__*/React.createElement("button", {
-    className: "toolbar-btn",
-    onClick: function onClick() {
-      return zoomTo(0.9);
-    }
-  }, "Full Size"), /*#__PURE__*/React.createElement("div", {
-    className: "toolbar-sep"
-  }), BLOCKS.map(function (b) {
-    return /*#__PURE__*/React.createElement("button", {
-      key: b.id,
-      className: "toolbar-btn",
-      style: {
-        borderLeft: "3px solid ".concat(b.color),
-        fontSize: 11
-      },
-      onClick: function onClick() {
-        var vw = window.innerWidth;
-        setTransform({
-          x: -(COL_STARTS[b.colIdx] * 0.7) + vw * 0.08,
-          y: 30,
-          scale: 0.7
-        });
-      }
-    }, b.title);
-  }), /*#__PURE__*/React.createElement("button", {
-    className: "toolbar-btn",
-    style: {
-      borderLeft: '3px solid #B8860B',
-      fontSize: 11
-    },
-    onClick: function onClick() {
-      return setTransform({
-        x: -(CONTRIB_X * 0.7) + window.innerWidth * 0.08,
-        y: 30,
-        scale: 0.7
-      });
-    }
-  }, "ALiEn \u2605")));
-}
-ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(App, null));
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfUmVhY3QiLCJSZWFjdCIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwidXNlUmVmIiwidXNlQ2FsbGJhY2siLCJ1c2VNZW1vIiwiQ09MX1ciLCJDT0xfR0FQIiwiQ09MX1NUQVJUUyIsIm1hcCIsImkiLCJDT0xfQ0VOVEVSUyIsInMiLCJDT05UUklCX1giLCJDT05UUklCX0NYIiwiSEVBREVSX1kiLCJIRUFERVJfSCIsIlBBUEVSU19TVEFSVCIsIkNPUkVfSCIsIlNUUk9OR19IIiwiQkdfSCIsIkNBUkRfR0FQIiwiVElFUl9HQVAiLCJDQU5WQVNfVyIsIl93aW5kb3ckTUlORE1BUF9EQVRBIiwid2luZG93IiwiTUlORE1BUF9EQVRBIiwiQkxPQ0tTIiwiQ1JPU1NfTElOS1MiLCJCTE9DS19BUlJPV1MiLCJjb21wdXRlUG9zaXRpb25zIiwic2hvd0JnTWFwIiwicG9zIiwiY29sSGVpZ2h0cyIsImZvckVhY2giLCJibG9jayIsImJpIiwiY3giLCJ5IiwidGllciIsInBhcGVycyIsImZpbHRlciIsInAiLCJsZW5ndGgiLCJoIiwic2hvd0JnIiwiaWQiLCJ2aXNpYmxlIiwicGFwZXIiLCJ4IiwiYmxvY2tJZHgiLCJDb25uZWN0aW9ucyIsIl9yZWYiLCJhcnJvd3MiLCJhcnJvd1kiLCJhcnJvdyIsIngxIiwieDIiLCJteCIsIm15IiwicHVzaCIsImNyZWF0ZUVsZW1lbnQiLCJrZXkiLCJjb25jYXQiLCJtYXJrZXJXaWR0aCIsIm1hcmtlckhlaWdodCIsInJlZlgiLCJyZWZZIiwib3JpZW50IiwicG9pbnRzIiwiZmlsbCIsInkxIiwieTIiLCJzdHJva2UiLCJzdHJva2VXaWR0aCIsIm1hcmtlckVuZCIsInRleHRBbmNob3IiLCJmb250U2l6ZSIsImZvbnRTdHlsZSIsImZvbnRGYW1pbHkiLCJsYWJlbCIsInNsaWNlIiwibGluayIsImZyb21Qb3MiLCJmcm9tIiwidG9Qb3MiLCJ0byIsImNwMXgiLCJjcDF5IiwiY3AyeCIsImNwMnkiLCJkIiwibWlkVCIsIm15MiIsIm9wYWNpdHkiLCJzdHJva2VEYXNoYXJyYXkiLCJQYXBlckNhcmQiLCJfcmVmMiIsIm9uU2VsZWN0Iiwic3R5bGUiLCJpc0NvcmUiLCJpc1N0cm9uZyIsImNsYXNzTmFtZSIsIm9uQ2xpY2siLCJfb2JqZWN0U3ByZWFkIiwiaGVpZ2h0IiwiYmFja2dyb3VuZCIsImNhcmRDb2xvciIsImJvcmRlckNvbG9yIiwiYm94U2hhZG93Iiwic3RhciIsInRpdGxlIiwiYXV0aG9ycyIsInllYXIiLCJqb3VybmFsIiwiQmxvY2tDb2x1bW4iLCJfcmVmMyIsImNvbElkeCIsIm9uVG9nZ2xlQmciLCJ0b3BZIiwibGVmdCIsImNvcmVQYXBlcnMiLCJzdHJvbmdQYXBlcnMiLCJiZ1BhcGVycyIsImNhcmRZIiwiY29yZUgiLCJzdHJvbmdIIiwiYmdIIiwiY29yZUl0ZW1zIiwic3Ryb25nSXRlbXMiLCJiZ0l0ZW1zIiwidG9nZ2xlWSIsInRvcCIsInBvc2l0aW9uIiwiY29sb3IiLCJzdWJ0aXRsZSIsIl9yZWY0Iiwid2lkdGgiLCJ0ZXh0VHJhbnNmb3JtIiwibGV0dGVyU3BhY2luZyIsImZvbnRXZWlnaHQiLCJfcmVmNSIsIl9yZWY2IiwiQ29udHJpYnV0aW9uTm9kZSIsIlNpZGVQYW5lbCIsIl9yZWY3Iiwic2VsZWN0aW9uIiwib25DbG9zZSIsImJvcmRlciIsIndoYXQiLCJob3ciLCJ3aHkiLCJ0ZXh0QWxpZ24iLCJjaGFyQXQiLCJ0b1VwcGVyQ2FzZSIsImNyb3NzUmVmIiwiTGVnZW5kIiwiYiIsInNwbGl0Iiwiam9pbiIsImJvcmRlclRvcCIsImJvcmRlclJhZGl1cyIsIm1hcmdpblRvcCIsIkFwcCIsIl91c2VTdGF0ZSIsIl91c2VTdGF0ZTIiLCJfc2xpY2VkVG9BcnJheSIsInNlbGVjdGVkIiwic2V0U2VsZWN0ZWQiLCJfdXNlU3RhdGUzIiwiX3VzZVN0YXRlNCIsInNldFNob3dCZyIsIl91c2VTdGF0ZTUiLCJzY2FsZSIsIl91c2VTdGF0ZTYiLCJ0cmFuc2Zvcm0iLCJzZXRUcmFuc2Zvcm0iLCJfdXNlU3RhdGU3IiwiX3VzZVN0YXRlOCIsImRyYWdnaW5nIiwic2V0RHJhZ2dpbmciLCJkcmFnUmVmIiwid3JhcFJlZiIsInZ3IiwiaW5uZXJXaWR0aCIsInZoIiwiaW5uZXJIZWlnaHQiLCJfdXNlTWVtbyIsImNhbnZhc0hlaWdodCIsIm1heEgiLCJzaG93IiwiTWF0aCIsIm1heCIsIm9uTW91c2VEb3duIiwiZSIsInRhcmdldCIsImNsb3Nlc3QiLCJjdXJyZW50Iiwic3RhcnRYIiwiY2xpZW50WCIsInN0YXJ0WSIsImNsaWVudFkiLCJ0eCIsInR5Iiwib25Nb3VzZU1vdmUiLCJ0Iiwib25Nb3VzZVVwIiwib25XaGVlbCIsInByZXZlbnREZWZhdWx0IiwiZmFjdG9yIiwiZGVsdGFZIiwicmVjdCIsImdldEJvdW5kaW5nQ2xpZW50UmVjdCIsIm5ld1NjYWxlIiwibWluIiwiem9vbVRvIiwidG9nZ2xlQmciLCJibG9ja0lkIiwicHJldiIsIl9kZWZpbmVQcm9wZXJ0eSIsInJlZiIsIm9uTW91c2VMZWF2ZSIsInBvaW50ZXJFdmVudHMiLCJvdmVyZmxvdyIsInN0ZERldmlhdGlvbiIsInJlc3VsdCIsImluMiIsIm9wZXJhdG9yIiwiYm90dG9tIiwicm91bmQiLCJib3JkZXJMZWZ0IiwiUmVhY3RET00iLCJjcmVhdGVSb290IiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsInJlbmRlciJdLCJzb3VyY2VzIjpbIklubGluZSBCYWJlbCBzY3JpcHQiXSwic291cmNlc0NvbnRlbnQiOlsiXG5jb25zdCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QsIHVzZVJlZiwgdXNlQ2FsbGJhY2ssIHVzZU1lbW8gfSA9IFJlYWN0O1xuXG4vLyDilIDilIAgTGF5b3V0IGNvbnN0YW50cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbmNvbnN0IENPTF9XID0gMzAwO1xuY29uc3QgQ09MX0dBUCA9IDE1MDtcbmNvbnN0IENPTF9TVEFSVFMgPSBbMCwxLDIsM10ubWFwKGkgPT4gMzAgKyBpKihDT0xfVytDT0xfR0FQKSk7XG5jb25zdCBDT0xfQ0VOVEVSUyA9IENPTF9TVEFSVFMubWFwKHMgPT4gcyArIENPTF9XLzIpO1xuLy8gWzE4MCwgNjMwLCAxMDgwLCAxNTMwXVxuY29uc3QgQ09OVFJJQl9YID0gMzAgKyA0KihDT0xfVytDT0xfR0FQKTtcbmNvbnN0IENPTlRSSUJfQ1ggPSBDT05UUklCX1ggKyAxNjU7XG5jb25zdCBIRUFERVJfWSA9IDUyO1xuY29uc3QgSEVBREVSX0ggPSA2MDtcbmNvbnN0IFBBUEVSU19TVEFSVCA9IEhFQURFUl9ZICsgSEVBREVSX0ggKyAxODtcbmNvbnN0IENPUkVfSCA9IDg4O1xuY29uc3QgU1RST05HX0ggPSA3NDtcbmNvbnN0IEJHX0ggPSA2NDtcbmNvbnN0IENBUkRfR0FQID0gNztcbmNvbnN0IFRJRVJfR0FQID0gMTY7XG5jb25zdCBDQU5WQVNfVyA9IENPTlRSSUJfWCArIDM2MDtcblxuY29uc3QgeyBCTE9DS1MsIENST1NTX0xJTktTLCBCTE9DS19BUlJPV1MgfSA9IHdpbmRvdy5NSU5ETUFQX0RBVEE7XG5cbi8vIOKUgOKUgCBDb21wdXRlIHBhcGVyIHBvc2l0aW9ucyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbmZ1bmN0aW9uIGNvbXB1dGVQb3NpdGlvbnMoc2hvd0JnTWFwKSB7XG4gIGNvbnN0IHBvcyA9IHt9O1xuICBjb25zdCBjb2xIZWlnaHRzID0ge307XG4gIEJMT0NLUy5mb3JFYWNoKChibG9jaywgYmkpID0+IHtcbiAgICBjb25zdCBjeCA9IENPTF9DRU5URVJTW2JpXTtcbiAgICBsZXQgeSA9IFBBUEVSU19TVEFSVDtcbiAgICBbJ2NvcmUnLCdzdHJvbmcnLCdiYWNrZ3JvdW5kJ10uZm9yRWFjaCh0aWVyID0+IHtcbiAgICAgIGNvbnN0IHBhcGVycyA9IGJsb2NrLnBhcGVycy5maWx0ZXIocCA9PiBwLnRpZXIgPT09IHRpZXIpO1xuICAgICAgaWYgKCFwYXBlcnMubGVuZ3RoKSByZXR1cm47XG4gICAgICBjb25zdCBoID0gdGllciA9PT0gJ2NvcmUnID8gQ09SRV9IIDogdGllciA9PT0gJ3N0cm9uZycgPyBTVFJPTkdfSCA6IEJHX0g7XG4gICAgICBjb25zdCBzaG93QmcgPSBzaG93QmdNYXBbYmxvY2suaWRdO1xuICAgICAgY29uc3QgdmlzaWJsZSA9IHRpZXIgIT09ICdiYWNrZ3JvdW5kJyB8fCBzaG93Qmc7XG4gICAgICBwYXBlcnMuZm9yRWFjaChwYXBlciA9PiB7XG4gICAgICAgIHBvc1twYXBlci5pZF0gPSB7IHg6IGN4LCB5OiB5ICsgaC8yLCBibG9ja0lkeDogYmksIHZpc2libGU6IHZpc2libGUgfHwgdGllciAhPT0gJ2JhY2tncm91bmQnIH07XG4gICAgICAgIGlmICh2aXNpYmxlKSB5ICs9IGggKyBDQVJEX0dBUDtcbiAgICAgIH0pO1xuICAgICAgaWYgKHZpc2libGUpIHkgKz0gVElFUl9HQVA7XG4gICAgfSk7XG4gICAgY29sSGVpZ2h0c1tibG9jay5pZF0gPSB5O1xuICB9KTtcbiAgcG9zWydDT05UUklCJ10gPSB7IHg6IENPTlRSSUJfQ1gsIHk6IEhFQURFUl9ZICsgMjQwLCBibG9ja0lkeDogNCB9O1xuICByZXR1cm4geyBwb3MsIGNvbEhlaWdodHMgfTtcbn1cblxuLy8g4pSA4pSAIFNWRyBjb25uZWN0aW9ucyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbmZ1bmN0aW9uIENvbm5lY3Rpb25zKHsgcG9zLCBzaG93QmcgfSkge1xuICBjb25zdCBhcnJvd3MgPSBbXTtcblxuICAvLyBCbG9jay10by1ibG9jayBtYWluIGFycm93cyAoYmV0d2VlbiBoZWFkZXJzKVxuICBjb25zdCBhcnJvd1kgPSBIRUFERVJfWSArIEhFQURFUl9IIC8gMjtcbiAgQkxPQ0tfQVJST1dTLmZvckVhY2goKGFycm93LCBpKSA9PiB7XG4gICAgY29uc3QgeDEgPSBDT0xfU1RBUlRTW2ldICsgQ09MX1cgKyAyO1xuICAgIGNvbnN0IHgyID0gaSA8IDMgPyBDT0xfU1RBUlRTW2krMV0gLSAyIDogQ09OVFJJQl9YIC0gMjtcbiAgICBjb25zdCBteCA9ICh4MSArIHgyKSAvIDI7XG4gICAgY29uc3QgbXkgPSBhcnJvd1kgLSAyMjtcbiAgICBhcnJvd3MucHVzaChcbiAgICAgIDxnIGtleT17YG1haW4tJHtpfWB9PlxuICAgICAgICA8ZGVmcz5cbiAgICAgICAgICA8bWFya2VyIGlkPXtgYXJyLSR7aX1gfSBtYXJrZXJXaWR0aD1cIjhcIiBtYXJrZXJIZWlnaHQ9XCI2XCIgcmVmWD1cIjdcIiByZWZZPVwiM1wiIG9yaWVudD1cImF1dG9cIj5cbiAgICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz1cIjAgMCwgOCAzLCAwIDZcIiBmaWxsPVwicmdiYSgyNTUsMjU1LDI1NSwwLjUpXCIgLz5cbiAgICAgICAgICA8L21hcmtlcj5cbiAgICAgICAgPC9kZWZzPlxuICAgICAgICA8bGluZSB4MT17eDF9IHkxPXthcnJvd1l9IHgyPXt4Mn0geTI9e2Fycm93WX1cbiAgICAgICAgICBzdHJva2U9XCJyZ2JhKDI1NSwyNTUsMjU1LDAuMjgpXCIgc3Ryb2tlV2lkdGg9XCIxLjVcIlxuICAgICAgICAgIG1hcmtlckVuZD17YHVybCgjYXJyLSR7aX0pYH0gLz5cbiAgICAgICAgPHRleHQgeD17bXh9IHk9e215fSB0ZXh0QW5jaG9yPVwibWlkZGxlXCJcbiAgICAgICAgICBmaWxsPVwicmdiYSgyNTUsMjU1LDI1NSwwLjQyKVwiIGZvbnRTaXplPVwiOC41XCIgZm9udFN0eWxlPVwiaXRhbGljXCJcbiAgICAgICAgICBmb250RmFtaWx5PVwiR2VvcmdpYSwgc2VyaWZcIj5cbiAgICAgICAgICB7YXJyb3cubGFiZWwubGVuZ3RoID4gNjAgPyBhcnJvdy5sYWJlbC5zbGljZSgwLDU3KSsn4oCmJyA6IGFycm93LmxhYmVsfVxuICAgICAgICA8L3RleHQ+XG4gICAgICA8L2c+XG4gICAgKTtcbiAgfSk7XG5cbiAgLy8gQ3Jvc3MtYmxvY2sgZGFzaGVkIGFtYmVyIGxpbmtzXG4gIENST1NTX0xJTktTLmZvckVhY2goKGxpbmssIGkpID0+IHtcbiAgICBjb25zdCBmcm9tUG9zID0gcG9zW2xpbmsuZnJvbV07XG4gICAgY29uc3QgdG9Qb3MgPSBwb3NbbGluay50b107XG4gICAgaWYgKCFmcm9tUG9zIHx8ICF0b1BvcykgcmV0dXJuO1xuXG4gICAgY29uc3QgeDEgPSBDT0xfU1RBUlRTW2Zyb21Qb3MuYmxvY2tJZHhdICsgQ09MX1c7XG4gICAgY29uc3QgeTEgPSBmcm9tUG9zLnk7XG4gICAgY29uc3QgeDIgPSB0b1Bvcy5ibG9ja0lkeCA9PT0gNCA/IENPTlRSSUJfWCA6IENPTF9TVEFSVFNbdG9Qb3MuYmxvY2tJZHhdO1xuICAgIGNvbnN0IHkyID0gdG9Qb3MueTtcbiAgICBjb25zdCBjcDF4ID0geDEgKyAoeDIgLSB4MSkgKiAwLjQ7XG4gICAgY29uc3QgY3AxeSA9IHkxIC0gMzU7XG4gICAgY29uc3QgY3AyeCA9IHgxICsgKHgyIC0geDEpICogMC42O1xuICAgIGNvbnN0IGNwMnkgPSB5MiAtIDM1O1xuICAgIGNvbnN0IGQgPSBgTSAke3gxfSAke3kxfSBDICR7Y3AxeH0gJHtjcDF5fSwgJHtjcDJ4fSAke2NwMnl9LCAke3gyfSAke3kyfWA7XG4gICAgY29uc3QgbWlkVCA9IDAuNTtcbiAgICBjb25zdCBteCA9IGNwMXggKiAwLjI1ICsgY3AyeCAqIDAuMjUgKyB4MSAqIDAuMTI1ICsgeDIgKiAwLjEyNSArIChjcDF4K2NwMngpKjAuMTI1O1xuICAgIGNvbnN0IG15MiA9IHkxICogMC41ICsgeTIgKiAwLjUgLSA0MDtcblxuICAgIGFycm93cy5wdXNoKFxuICAgICAgPGcga2V5PXtgY3Jvc3MtJHtpfWB9IG9wYWNpdHk9XCIwLjhcIj5cbiAgICAgICAgPGRlZnM+XG4gICAgICAgICAgPG1hcmtlciBpZD17YHhhcnItJHtpfWB9IG1hcmtlcldpZHRoPVwiN1wiIG1hcmtlckhlaWdodD1cIjVcIiByZWZYPVwiNlwiIHJlZlk9XCIyLjVcIiBvcmllbnQ9XCJhdXRvXCI+XG4gICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9XCIwIDAsIDcgMi41LCAwIDVcIiBmaWxsPVwiI0ZGQTUwMFwiIC8+XG4gICAgICAgICAgPC9tYXJrZXI+XG4gICAgICAgIDwvZGVmcz5cbiAgICAgICAgPHBhdGggZD17ZH0gZmlsbD1cIm5vbmVcIiBzdHJva2U9XCIjRkZBNTAwXCIgc3Ryb2tlV2lkdGg9XCIxLjNcIlxuICAgICAgICAgIHN0cm9rZURhc2hhcnJheT1cIjUsNFwiIG1hcmtlckVuZD17YHVybCgjeGFyci0ke2l9KWB9IG9wYWNpdHk9XCIwLjdcIiAvPlxuICAgICAgICA8dGV4dCB4PXsoeDEreDIpLzJ9IHk9e215Mn0gdGV4dEFuY2hvcj1cIm1pZGRsZVwiXG4gICAgICAgICAgZmlsbD1cIiNGRkE1MDBcIiBmb250U2l6ZT1cIjhcIiBmb250U3R5bGU9XCJpdGFsaWNcIiBmb250RmFtaWx5PVwiR2VvcmdpYSwgc2VyaWZcIiBvcGFjaXR5PVwiMC44XCI+XG4gICAgICAgICAge2xpbmsubGFiZWx9XG4gICAgICAgIDwvdGV4dD5cbiAgICAgIDwvZz5cbiAgICApO1xuICB9KTtcblxuICByZXR1cm4gPGc+e2Fycm93c308L2c+O1xufVxuXG4vLyDilIDilIAgUGFwZXIgY2FyZCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIBcbmZ1bmN0aW9uIFBhcGVyQ2FyZCh7IHBhcGVyLCBibG9jaywgb25TZWxlY3QsIHN0eWxlIH0pIHtcbiAgY29uc3QgaXNDb3JlID0gcGFwZXIudGllciA9PT0gJ2NvcmUnO1xuICBjb25zdCBpc1N0cm9uZyA9IHBhcGVyLnRpZXIgPT09ICdzdHJvbmcnO1xuICBjb25zdCBoID0gaXNDb3JlID8gQ09SRV9IIDogaXNTdHJvbmcgPyBTVFJPTkdfSCA6IEJHX0g7XG4gIHJldHVybiAoXG4gICAgPGRpdlxuICAgICAgY2xhc3NOYW1lPXtgcGFwZXItY2FyZCAke3BhcGVyLnRpZXJ9ICR7aXNDb3JlID8gJ2dvbGQtZ2xvdycgOiAnJ31gfVxuICAgICAgb25DbGljaz17KCkgPT4gb25TZWxlY3QoeyBwYXBlciwgYmxvY2sgfSl9XG4gICAgICBzdHlsZT17e1xuICAgICAgICBoZWlnaHQ6IGgsXG4gICAgICAgIGJhY2tncm91bmQ6IGJsb2NrLmNhcmRDb2xvcixcbiAgICAgICAgYm9yZGVyQ29sb3I6IGlzQ29yZSA/IGJsb2NrLmJvcmRlckNvbG9yIDogJ3JnYmEoMjU1LDI1NSwyNTUsMC4wOCknLFxuICAgICAgICBib3hTaGFkb3c6IGlzQ29yZVxuICAgICAgICAgID8gYDAgMCAwIDEuNXB4ICNCODg2MEI0NCwgMCAzcHggMTRweCByZ2JhKDAsMCwwLDAuNCksIGluc2V0IDAgMXB4IDAgcmdiYSgyNTUsMjU1LDI1NSwwLjA0KWBcbiAgICAgICAgICA6IGAwIDJweCA4cHggcmdiYSgwLDAsMCwwLjM1KWAsXG4gICAgICAgIC4uLnN0eWxlLFxuICAgICAgfX1cbiAgICA+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhcGVyLWljb25cIj5cbiAgICAgICAgPHNwYW4+8J+ThDwvc3Bhbj5cbiAgICAgICAge3BhcGVyLnN0YXIgJiYgPHNwYW4gY2xhc3NOYW1lPVwicGFwZXItc3RhclwiPntwYXBlci5zdGFyfTwvc3Bhbj59XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFwZXItdGl0bGVcIiBzdHlsZT17eyBmb250U2l6ZTogaXNDb3JlID8gMTEgOiAxMC41IH19PlxuICAgICAgICB7cGFwZXIudGl0bGV9XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFwZXItbWV0YVwiPlxuICAgICAgICB7cGFwZXIuYXV0aG9yc30sIHtwYXBlci55ZWFyfSDCtyA8ZW0+e3BhcGVyLmpvdXJuYWx9PC9lbT5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICApO1xufVxuXG4vLyDilIDilIAgQmxvY2sgY29sdW1uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuZnVuY3Rpb24gQmxvY2tDb2x1bW4oeyBibG9jaywgY29sSWR4LCBvblNlbGVjdCwgc2hvd0JnLCBvblRvZ2dsZUJnLCB0b3BZIH0pIHtcbiAgY29uc3QgbGVmdCA9IENPTF9TVEFSVFNbY29sSWR4XTtcbiAgY29uc3QgY29yZVBhcGVycyA9IGJsb2NrLnBhcGVycy5maWx0ZXIocCA9PiBwLnRpZXIgPT09ICdjb3JlJyk7XG4gIGNvbnN0IHN0cm9uZ1BhcGVycyA9IGJsb2NrLnBhcGVycy5maWx0ZXIocCA9PiBwLnRpZXIgPT09ICdzdHJvbmcnKTtcbiAgY29uc3QgYmdQYXBlcnMgPSBibG9jay5wYXBlcnMuZmlsdGVyKHAgPT4gcC50aWVyID09PSAnYmFja2dyb3VuZCcpO1xuXG4gIGxldCBjYXJkWSA9IFBBUEVSU19TVEFSVDtcbiAgY29uc3QgY29yZUggPSBDT1JFX0ggKyBDQVJEX0dBUDtcbiAgY29uc3Qgc3Ryb25nSCA9IFNUUk9OR19IICsgQ0FSRF9HQVA7XG4gIGNvbnN0IGJnSCA9IEJHX0ggKyBDQVJEX0dBUDtcblxuICBjb25zdCBjb3JlSXRlbXMgPSBjb3JlUGFwZXJzLm1hcCgocCwgaSkgPT4ge1xuICAgIGNvbnN0IHkgPSBjYXJkWSArIGkgKiBjb3JlSDtcbiAgICByZXR1cm4geyBwYXBlcjogcCwgeSB9O1xuICB9KTtcbiAgY2FyZFkgKz0gY29yZVBhcGVycy5sZW5ndGggKiBjb3JlSCArIFRJRVJfR0FQO1xuXG4gIGNvbnN0IHN0cm9uZ0l0ZW1zID0gc3Ryb25nUGFwZXJzLm1hcCgocCwgaSkgPT4ge1xuICAgIGNvbnN0IHkgPSBjYXJkWSArIGkgKiBzdHJvbmdIO1xuICAgIHJldHVybiB7IHBhcGVyOiBwLCB5IH07XG4gIH0pO1xuICBjYXJkWSArPSBzdHJvbmdQYXBlcnMubGVuZ3RoICogc3Ryb25nSCArIFRJRVJfR0FQO1xuXG4gIGNvbnN0IGJnSXRlbXMgPSBiZ1BhcGVycy5tYXAoKHAsIGkpID0+IHtcbiAgICBjb25zdCB5ID0gY2FyZFkgKyBpICogYmdIO1xuICAgIHJldHVybiB7IHBhcGVyOiBwLCB5IH07XG4gIH0pO1xuICBjb25zdCB0b2dnbGVZID0gY2FyZFk7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImJsb2NrLWNvbFwiIHN0eWxlPXt7IGxlZnQsIHRvcDogdG9wWSB8fCAwIH19PlxuICAgICAgey8qIEhlYWRlciAqL31cbiAgICAgIDxkaXZcbiAgICAgICAgY2xhc3NOYW1lPVwiYmxvY2staGVhZGVyXCJcbiAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICBwb3NpdGlvbjogJ2Fic29sdXRlJywgdG9wOiBIRUFERVJfWSwgbGVmdDogMCxcbiAgICAgICAgICBiYWNrZ3JvdW5kOiBgbGluZWFyLWdyYWRpZW50KDEzNWRlZywgJHtibG9jay5jb2xvcn0sICR7YmxvY2suY29sb3J9Y2MpYCxcbiAgICAgICAgICBib3hTaGFkb3c6IGAwIDRweCAyMHB4ICR7YmxvY2suY29sb3J9NTUsIGluc2V0IDAgMXB4IDAgcmdiYSgyNTUsMjU1LDI1NSwwLjEpYCxcbiAgICAgICAgfX1cbiAgICAgID5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJibG9jay1oZWFkZXItdGl0bGVcIj57YmxvY2sudGl0bGV9PC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYmxvY2staGVhZGVyLXN1YlwiPntibG9jay5zdWJ0aXRsZX08L2Rpdj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICB7LyogQ29yZSBwYXBlcnMgKi99XG4gICAgICB7Y29yZUl0ZW1zLm1hcCgoeyBwYXBlciwgeSB9KSA9PiAoXG4gICAgICAgIDxkaXYga2V5PXtwYXBlci5pZH0gc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIHRvcDogeSwgbGVmdDogMCB9fT5cbiAgICAgICAgICA8UGFwZXJDYXJkIHBhcGVyPXtwYXBlcn0gYmxvY2s9e2Jsb2NrfSBvblNlbGVjdD17b25TZWxlY3R9IC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgKSl9XG5cbiAgICAgIHsvKiBTZWN0aW9uIGxhYmVsIGZvciBzdHJvbmcgKi99XG4gICAgICB7c3Ryb25nUGFwZXJzLmxlbmd0aCA+IDAgJiYgKFxuICAgICAgICA8ZGl2IHN0eWxlPXt7XG4gICAgICAgICAgcG9zaXRpb246ICdhYnNvbHV0ZScsXG4gICAgICAgICAgdG9wOiBQQVBFUlNfU1RBUlQgKyBjb3JlUGFwZXJzLmxlbmd0aCAqIGNvcmVIICsgNCxcbiAgICAgICAgICBsZWZ0OiAwLCB3aWR0aDogQ09MX1csXG4gICAgICAgICAgZm9udFNpemU6IDgsIGNvbG9yOiAncmdiYSgyNTUsMjU1LDI1NSwwLjI4KScsIHRleHRUcmFuc2Zvcm06ICd1cHBlcmNhc2UnLFxuICAgICAgICAgIGxldHRlclNwYWNpbmc6ICcwLjFlbScsIGZvbnRXZWlnaHQ6IDcwMFxuICAgICAgICB9fT5cbiAgICAgICAgICBTdHJvbmdseSBSZWxldmFudFxuICAgICAgICA8L2Rpdj5cbiAgICAgICl9XG5cbiAgICAgIHsvKiBTdHJvbmcgcGFwZXJzICovfVxuICAgICAge3N0cm9uZ0l0ZW1zLm1hcCgoeyBwYXBlciwgeSB9KSA9PiAoXG4gICAgICAgIDxkaXYga2V5PXtwYXBlci5pZH0gc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIHRvcDogeSwgbGVmdDogMCB9fT5cbiAgICAgICAgICA8UGFwZXJDYXJkIHBhcGVyPXtwYXBlcn0gYmxvY2s9e2Jsb2NrfSBvblNlbGVjdD17b25TZWxlY3R9IC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgKSl9XG5cbiAgICAgIHsvKiBCYWNrZ3JvdW5kIHRvZ2dsZSAqL31cbiAgICAgIHtiZ1BhcGVycy5sZW5ndGggPiAwICYmIChcbiAgICAgICAgPGRpdlxuICAgICAgICAgIGNsYXNzTmFtZT1cImJnLXRvZ2dsZVwiXG4gICAgICAgICAgc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIHRvcDogdG9nZ2xlWSwgbGVmdDogMCB9fVxuICAgICAgICAgIG9uQ2xpY2s9eygpID0+IG9uVG9nZ2xlQmcoYmxvY2suaWQpfVxuICAgICAgICA+XG4gICAgICAgICAge3Nob3dCZyA/IGDilrIgSGlkZSAke2JnUGFwZXJzLmxlbmd0aH0gYmFja2dyb3VuZCBwYXBlcnNgIDogYOKWvCBTaG93ICR7YmdQYXBlcnMubGVuZ3RofSBiYWNrZ3JvdW5kIHBhcGVyc2B9XG4gICAgICAgIDwvZGl2PlxuICAgICAgKX1cblxuICAgICAgey8qIEJhY2tncm91bmQgcGFwZXJzICovfVxuICAgICAge3Nob3dCZyAmJiBiZ0l0ZW1zLm1hcCgoeyBwYXBlciwgeSB9KSA9PiAoXG4gICAgICAgIDxkaXYga2V5PXtwYXBlci5pZH0gc3R5bGU9e3sgcG9zaXRpb246ICdhYnNvbHV0ZScsIHRvcDogeSArIDQ2LCBsZWZ0OiAwIH19PlxuICAgICAgICAgIDxQYXBlckNhcmQgcGFwZXI9e3BhcGVyfSBibG9jaz17YmxvY2t9IG9uU2VsZWN0PXtvblNlbGVjdH0gLz5cbiAgICAgICAgPC9kaXY+XG4gICAgICApKX1cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuLy8g4pSA4pSAIENvbnRyaWJ1dGlvbiBub2RlIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuZnVuY3Rpb24gQ29udHJpYnV0aW9uTm9kZSgpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRyaWItbm9kZVwiIHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCBsZWZ0OiBDT05UUklCX1gsIHRvcDogSEVBREVSX1kgfX0+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRyaWItaGVhZGVyXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJpYi10aXRsZVwiPuKYhSBFTlRFUlBSSVNFIFNUT1JZICsgQUxpRW48L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250cmliLXN1YnRpdGxlXCI+XG4gICAgICAgICAgQSB2ZXJzaW9uZWQsIG1hY2hpbmUtYWRkcmVzc2FibGUgb3JnYW5pemF0aW9uYWwgbWFuZGF0ZSBhcnRpZmFjdCDigJQgdGhlIGNvbXB1dGFibGUgY29uc3RpdHV0aW9uIEFJIGFnZW50cyByZWZlcmVuY2UgYXQgcnVudGltZSwgYW5kIGdvdmVybmFuY2UgYWN0b3JzIGluc3BlY3QsIGFkanVkaWNhdGUgYWdhaW5zdCwgYW5kIHVwZGF0ZS5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJpYi1ib2R5XCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3Itbm9kZVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3ItaGVhZGVyXCI+8J+Pm++4jyBBUkNISVRFQ1Q8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLWRlc2NcIj5BdXRob3JzIGFuZCBwcm9wb3NlcyBTdG9yeSB2ZXJzaW9uIHVwZGF0ZXMuIENhbm5vdCBhY3RpdmF0ZSB1bmlsYXRlcmFsbHkuIFN1Ym1pdHMgUmF0aWZpY2F0aW9uIFByb3Bvc2FscyDihpIgSHVtYW4gR292ZXJuYW5jZSBPd25lci48L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJpYi1hcnJvd1wiPuKGlTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLW5vZGVcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLWhlYWRlclwiPvCfkYHvuI8gU0VOVElORUw8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLWRlc2NcIj5Nb25pdG9ycyBwcm9kdWN0aW9uIGJlaGF2aW9yIGNvbnRpbnVvdXNseS4gUHJvZHVjZXMgRXZpZGVuY2UgUGFja2V0cyBsaW5rZWQgdG8gU3RvcnkgY2xhdXNlcyDihpIgT3JhY2xlLjwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250cmliLWFycm93XCI+4oaVPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3Itbm9kZVwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3ItaGVhZGVyXCI+4pqW77iPIE9SQUNMRTwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3ItZGVzY1wiPkNhbGlicmF0ZXMgYXV0b25vbXkgcG9zdHVyZS4gUmV2ZXJzaWJsZSBpbnRlcnZlbnRpb24gbGFkZGVyLiBFc2NhbGF0ZXMgdG8gSHVtYW4gR292ZXJuYW5jZSBPd25lciB3aGVuIHRocmVzaG9sZCBleGNlZWRlZC48L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udHJpYi1hcnJvd1wiPuKGlTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLW5vZGVcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFjdG9yLWhlYWRlclwiPvCfkaQgSFVNQU4gR09WRVJOQU5DRSBPV05FUjwvZGl2PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0b3ItZGVzY1wiPkNvbnN0aXR1dGlvbmFsIHJhdGlmaWNhdGlvbiBhdXRob3JpdHkuIEFwcHJvdmVzIFN0b3J5IGNoYW5nZXMuIFJhdGlmaWVzIOKGkiBFbnRlcnByaXNlIFN0b3J5LiBSZWNlaXZlcyBPcmFjbGUgZXNjYWxhdGlvbnMuPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbi8vIOKUgOKUgCBTaWRlIHBhbmVsIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuZnVuY3Rpb24gU2lkZVBhbmVsKHsgc2VsZWN0aW9uLCBvbkNsb3NlIH0pIHtcbiAgY29uc3QgeyBwYXBlciwgYmxvY2sgfSA9IHNlbGVjdGlvbjtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT1cInNpZGUtcGFuZWxcIj5cbiAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwicGFuZWwtY2xvc2VcIiBvbkNsaWNrPXtvbkNsb3NlfT7inJUgQ2xvc2U8L2J1dHRvbj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYW5lbC1ibG9jay10YWdcIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBibG9jay5jb2xvciArICczMycsIGNvbG9yOiBibG9jay5ib3JkZXJDb2xvciwgYm9yZGVyOiBgMXB4IHNvbGlkICR7YmxvY2suYm9yZGVyQ29sb3J9NTVgIH19PlxuICAgICAgICB7YmxvY2sudGl0bGV9IOKAlCB7YmxvY2suc3VidGl0bGV9XG4gICAgICA8L2Rpdj5cblxuICAgICAge3BhcGVyLnN0YXIgJiYgPGRpdiBjbGFzc05hbWU9XCJwYW5lbC1zdGFyXCI+e3BhcGVyLnN0YXJ9PC9kaXY+fVxuXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhbmVsLXRpdGxlXCI+e3BhcGVyLnRpdGxlfTwvZGl2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYW5lbC1tZXRhXCI+XG4gICAgICAgIHtwYXBlci5hdXRob3JzfSwge3BhcGVyLnllYXJ9IMK3IDxlbT57cGFwZXIuam91cm5hbH08L2VtPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtZGl2aWRlclwiIC8+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtc2VjdGlvblwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhbmVsLXNlY3Rpb24tbGFiZWxcIj7ilrggV2hhdCBpdCBzYXlzPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtc2VjdGlvbi10ZXh0XCI+e3BhcGVyLndoYXR9PC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtc2VjdGlvblwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhbmVsLXNlY3Rpb24tbGFiZWxcIj7ilrggSG93IGl0IGNvbm5lY3RzPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtc2VjdGlvbi10ZXh0XCI+e3BhcGVyLmhvd308L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYW5lbC1zZWN0aW9uXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGFuZWwtc2VjdGlvbi1sYWJlbFwiPuKWuCBXaHkgaGVyZTwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBhbmVsLXNlY3Rpb24tdGV4dFwiPntwYXBlci53aHl9PC9kaXY+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwYW5lbC1kaXZpZGVyXCIgLz5cbiAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IDksIGNvbG9yOiAnIzU1NScsIGZvbnRTdHlsZTogJ2l0YWxpYycsIHRleHRBbGlnbjogJ2NlbnRlcicgfX0+XG4gICAgICAgIFRpZXI6IHtwYXBlci50aWVyLmNoYXJBdCgwKS50b1VwcGVyQ2FzZSgpICsgcGFwZXIudGllci5zbGljZSgxKX1cbiAgICAgICAge3BhcGVyLmNyb3NzUmVmID8gJyDCtyBDcm9zcy1yZWZlcmVuY2VkIGluIGFyZ3VtZW50IHNwaW5lJyA6ICcnfVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbi8vIOKUgOKUgCBMZWdlbmQg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAXG5mdW5jdGlvbiBMZWdlbmQoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJsZWdlbmRcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGVnZW5kLXRpdGxlXCI+TWFwIEtleTwvZGl2PlxuICAgICAge0JMT0NLUy5tYXAoYiA9PiAoXG4gICAgICAgIDxkaXYga2V5PXtiLmlkfSBjbGFzc05hbWU9XCJsZWdlbmQtcm93XCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWdlbmQtZG90XCIgc3R5bGU9e3sgYmFja2dyb3VuZDogYi5jb2xvciB9fSAvPlxuICAgICAgICAgIDxzcGFuPntiLnRpdGxlfSDigJQge2Iuc3VidGl0bGUuc3BsaXQoJyAnKS5zbGljZSgwLDMpLmpvaW4oJyAnKX3igKY8L3NwYW4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgKSl9XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImxlZ2VuZC1yb3dcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWdlbmQtZG90XCIgc3R5bGU9e3sgYmFja2dyb3VuZDogJyNCODg2MEInIH19IC8+XG4gICAgICAgIDxzcGFuPlByb3Bvc2VkIENvbnRyaWJ1dGlvbiAoQUxpRW4pPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IHN0eWxlPXt7IGhlaWdodDogNiB9fSAvPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWdlbmQtcm93XCI+XG4gICAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDIwLCBoZWlnaHQ6IDIsIGJhY2tncm91bmQ6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuNCknIH19IC8+XG4gICAgICAgIDxzcGFuPkJsb2NrIHRyYW5zaXRpb24gYXJyb3dzPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImxlZ2VuZC1yb3dcIj5cbiAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogMjAsIGhlaWdodDogMiwgYmFja2dyb3VuZDogJyNGRkE1MDAnLCBib3JkZXJUb3A6ICcxcHggZGFzaGVkICNGRkE1MDAnIH19IC8+XG4gICAgICAgIDxzcGFuPkNyb3NzLWJsb2NrIHRoZW9yZXRpY2FsIGxpbmtzPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImxlZ2VuZC1yb3dcIj5cbiAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogMTQsIGhlaWdodDogMTQsIGJvcmRlcjogJzEuNXB4IHNvbGlkICNCODg2MEInLCBib3JkZXJSYWRpdXM6IDMsIGJveFNoYWRvdzogJzAgMCA1cHggI0I4ODYwQjU1JyB9fSAvPlxuICAgICAgICA8c3Bhbj5Db3JlIC8gYW5jaG9yIHBhcGVyPC9zcGFuPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiA5LCBjb2xvcjogJyM0NDQnLCBtYXJnaW5Ub3A6IDYsIGZvbnRTdHlsZTogJ2l0YWxpYycgfX0+XG4gICAgICAgIENsaWNrIGFueSBjYXJkIHRvIGV4cGFuZCBkZXRhaWxzXG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuLy8g4pSA4pSAIE1haW4gYXBwIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuZnVuY3Rpb24gQXBwKCkge1xuICBjb25zdCBbc2VsZWN0ZWQsIHNldFNlbGVjdGVkXSA9IHVzZVN0YXRlKG51bGwpO1xuICBjb25zdCBbc2hvd0JnLCBzZXRTaG93QmddID0gdXNlU3RhdGUoe30pO1xuICBjb25zdCBbdHJhbnNmb3JtLCBzZXRUcmFuc2Zvcm1dID0gdXNlU3RhdGUoeyB4OiAwLCB5OiAwLCBzY2FsZTogMC40OCB9KTtcbiAgY29uc3QgW2RyYWdnaW5nLCBzZXREcmFnZ2luZ10gPSB1c2VTdGF0ZShmYWxzZSk7XG4gIGNvbnN0IGRyYWdSZWYgPSB1c2VSZWYobnVsbCk7XG4gIGNvbnN0IHdyYXBSZWYgPSB1c2VSZWYobnVsbCk7XG5cbiAgLy8gQ2VudHJlIG1hcCBvbiBsb2FkXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgY29uc3QgdncgPSB3aW5kb3cuaW5uZXJXaWR0aDtcbiAgICBjb25zdCB2aCA9IHdpbmRvdy5pbm5lckhlaWdodDtcbiAgICBzZXRUcmFuc2Zvcm0oeyB4OiB2dyAqIDAuMDIsIHk6IHZoICogMC4wNCwgc2NhbGU6IDAuNDYgfSk7XG4gIH0sIFtdKTtcblxuICBjb25zdCB7IHBvcyB9ID0gdXNlTWVtbygoKSA9PiBjb21wdXRlUG9zaXRpb25zKHNob3dCZyksIFtzaG93QmddKTtcblxuICAvLyBDb21wdXRlIGNhbnZhcyBoZWlnaHRcbiAgY29uc3QgY2FudmFzSGVpZ2h0ID0gdXNlTWVtbygoKSA9PiB7XG4gICAgbGV0IG1heEggPSAyMDA7XG4gICAgQkxPQ0tTLmZvckVhY2goKGJsb2NrLCBiaSkgPT4ge1xuICAgICAgbGV0IHkgPSBQQVBFUlNfU1RBUlQ7XG4gICAgICBbJ2NvcmUnLCdzdHJvbmcnLCdiYWNrZ3JvdW5kJ10uZm9yRWFjaCh0aWVyID0+IHtcbiAgICAgICAgY29uc3QgcGFwZXJzID0gYmxvY2sucGFwZXJzLmZpbHRlcihwID0+IHAudGllciA9PT0gdGllcik7XG4gICAgICAgIGNvbnN0IGggPSB0aWVyID09PSAnY29yZScgPyBDT1JFX0ggOiB0aWVyID09PSAnc3Ryb25nJyA/IFNUUk9OR19IIDogQkdfSDtcbiAgICAgICAgY29uc3Qgc2hvdyA9IHRpZXIgIT09ICdiYWNrZ3JvdW5kJyB8fCBzaG93QmdbYmxvY2suaWRdO1xuICAgICAgICBpZiAoc2hvdykgeSArPSBwYXBlcnMubGVuZ3RoICogKGggKyBDQVJEX0dBUCkgKyBUSUVSX0dBUDtcbiAgICAgICAgZWxzZSBpZiAodGllciA9PT0gJ2JhY2tncm91bmQnICYmIHBhcGVycy5sZW5ndGggPiAwKSB5ICs9IDQ2O1xuICAgICAgfSk7XG4gICAgICBtYXhIID0gTWF0aC5tYXgobWF4SCwgeSArIDQwKTtcbiAgICB9KTtcbiAgICByZXR1cm4gbWF4SCArIDYwO1xuICB9LCBbc2hvd0JnXSk7XG5cbiAgLy8gUGFuXG4gIGNvbnN0IG9uTW91c2VEb3duID0gdXNlQ2FsbGJhY2soKGUpID0+IHtcbiAgICBpZiAoZS50YXJnZXQuY2xvc2VzdCgnLnBhcGVyLWNhcmQnKSB8fCBlLnRhcmdldC5jbG9zZXN0KCcuc2lkZS1wYW5lbCcpIHx8XG4gICAgICAgIGUudGFyZ2V0LmNsb3Nlc3QoJy50b29sYmFyJykgfHwgZS50YXJnZXQuY2xvc2VzdCgnLmxlZ2VuZCcpIHx8XG4gICAgICAgIGUudGFyZ2V0LmNsb3Nlc3QoJy5iZy10b2dnbGUnKSB8fCBlLnRhcmdldC5jbG9zZXN0KCcuY29udHJpYi1ub2RlJykpIHJldHVybjtcbiAgICBkcmFnUmVmLmN1cnJlbnQgPSB7IHN0YXJ0WDogZS5jbGllbnRYLCBzdGFydFk6IGUuY2xpZW50WSwgdHg6IHRyYW5zZm9ybS54LCB0eTogdHJhbnNmb3JtLnkgfTtcbiAgICBzZXREcmFnZ2luZyh0cnVlKTtcbiAgfSwgW3RyYW5zZm9ybV0pO1xuXG4gIGNvbnN0IG9uTW91c2VNb3ZlID0gdXNlQ2FsbGJhY2soKGUpID0+IHtcbiAgICBpZiAoIWRyYWdSZWYuY3VycmVudCkgcmV0dXJuO1xuICAgIHNldFRyYW5zZm9ybSh0ID0+ICh7XG4gICAgICAuLi50LFxuICAgICAgeDogZHJhZ1JlZi5jdXJyZW50LnR4ICsgKGUuY2xpZW50WCAtIGRyYWdSZWYuY3VycmVudC5zdGFydFgpLFxuICAgICAgeTogZHJhZ1JlZi5jdXJyZW50LnR5ICsgKGUuY2xpZW50WSAtIGRyYWdSZWYuY3VycmVudC5zdGFydFkpLFxuICAgIH0pKTtcbiAgfSwgW10pO1xuXG4gIGNvbnN0IG9uTW91c2VVcCA9IHVzZUNhbGxiYWNrKCgpID0+IHtcbiAgICBkcmFnUmVmLmN1cnJlbnQgPSBudWxsO1xuICAgIHNldERyYWdnaW5nKGZhbHNlKTtcbiAgfSwgW10pO1xuXG4gIC8vIFpvb21cbiAgY29uc3Qgb25XaGVlbCA9IHVzZUNhbGxiYWNrKChlKSA9PiB7XG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xuICAgIGNvbnN0IGZhY3RvciA9IGUuZGVsdGFZIDwgMCA/IDEuMSA6IDAuOTE7XG4gICAgY29uc3QgcmVjdCA9IHdyYXBSZWYuY3VycmVudC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKTtcbiAgICBjb25zdCBteCA9IGUuY2xpZW50WCAtIHJlY3QubGVmdDtcbiAgICBjb25zdCBteSA9IGUuY2xpZW50WSAtIHJlY3QudG9wO1xuICAgIHNldFRyYW5zZm9ybSh0ID0+IHtcbiAgICAgIGNvbnN0IG5ld1NjYWxlID0gTWF0aC5tYXgoMC4xOCwgTWF0aC5taW4oMi4yLCB0LnNjYWxlICogZmFjdG9yKSk7XG4gICAgICByZXR1cm4ge1xuICAgICAgICBzY2FsZTogbmV3U2NhbGUsXG4gICAgICAgIHg6IG14IC0gKG14IC0gdC54KSAqIChuZXdTY2FsZSAvIHQuc2NhbGUpLFxuICAgICAgICB5OiBteSAtIChteSAtIHQueSkgKiAobmV3U2NhbGUgLyB0LnNjYWxlKSxcbiAgICAgIH07XG4gICAgfSk7XG4gIH0sIFtdKTtcblxuICBjb25zdCB6b29tVG8gPSAoc2NhbGUpID0+IHtcbiAgICBjb25zdCB2dyA9IHdpbmRvdy5pbm5lcldpZHRoO1xuICAgIGNvbnN0IHZoID0gd2luZG93LmlubmVySGVpZ2h0O1xuICAgIHNldFRyYW5zZm9ybSh7IHg6IHZ3ICogMC4wMiwgeTogdmggKiAwLjA0LCBzY2FsZSB9KTtcbiAgfTtcblxuICBjb25zdCB0b2dnbGVCZyA9IChibG9ja0lkKSA9PiB7XG4gICAgc2V0U2hvd0JnKHByZXYgPT4gKHsgLi4ucHJldiwgW2Jsb2NrSWRdOiAhcHJldltibG9ja0lkXSB9KSk7XG4gIH07XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2XG4gICAgICByZWY9e3dyYXBSZWZ9XG4gICAgICBjbGFzc05hbWU9e2BjYW52YXMtd3JhcHBlciR7ZHJhZ2dpbmcgPyAnIGRyYWdnaW5nJyA6ICcnfWB9XG4gICAgICBvbk1vdXNlRG93bj17b25Nb3VzZURvd259XG4gICAgICBvbk1vdXNlTW92ZT17b25Nb3VzZU1vdmV9XG4gICAgICBvbk1vdXNlVXA9e29uTW91c2VVcH1cbiAgICAgIG9uTW91c2VMZWF2ZT17b25Nb3VzZVVwfVxuICAgICAgb25XaGVlbD17b25XaGVlbH1cbiAgICA+XG4gICAgICB7LyogQ2FudmFzICovfVxuICAgICAgPGRpdlxuICAgICAgICBjbGFzc05hbWU9XCJjYW52YXNcIlxuICAgICAgICBzdHlsZT17e1xuICAgICAgICAgIHdpZHRoOiBDQU5WQVNfVyxcbiAgICAgICAgICBoZWlnaHQ6IGNhbnZhc0hlaWdodCxcbiAgICAgICAgICB0cmFuc2Zvcm06IGB0cmFuc2xhdGUoJHt0cmFuc2Zvcm0ueH1weCwgJHt0cmFuc2Zvcm0ueX1weCkgc2NhbGUoJHt0cmFuc2Zvcm0uc2NhbGV9KWAsXG4gICAgICAgIH19XG4gICAgICA+XG4gICAgICAgIHsvKiBTVkcgY29ubmVjdGlvbiBsYXllciAqL31cbiAgICAgICAgPHN2Z1xuICAgICAgICAgIHN0eWxlPXt7IHBvc2l0aW9uOiAnYWJzb2x1dGUnLCB0b3A6IDAsIGxlZnQ6IDAsIHdpZHRoOiBDQU5WQVNfVywgaGVpZ2h0OiBjYW52YXNIZWlnaHQsIHBvaW50ZXJFdmVudHM6ICdub25lJywgb3ZlcmZsb3c6ICd2aXNpYmxlJyB9fVxuICAgICAgICA+XG4gICAgICAgICAgPGRlZnM+XG4gICAgICAgICAgICA8ZmlsdGVyIGlkPVwiZ2xvd1wiPlxuICAgICAgICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPVwiMlwiIHJlc3VsdD1cImJsdXJcIiAvPlxuICAgICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49XCJTb3VyY2VHcmFwaGljXCIgaW4yPVwiYmx1clwiIG9wZXJhdG9yPVwib3ZlclwiIC8+XG4gICAgICAgICAgICA8L2ZpbHRlcj5cbiAgICAgICAgICA8L2RlZnM+XG4gICAgICAgICAgPENvbm5lY3Rpb25zIHBvcz17cG9zfSBzaG93Qmc9e3Nob3dCZ30gLz5cbiAgICAgICAgPC9zdmc+XG5cbiAgICAgICAgey8qIEJsb2NrIGNvbHVtbnMgKi99XG4gICAgICAgIHtCTE9DS1MubWFwKChibG9jaywgaSkgPT4gKFxuICAgICAgICAgIDxCbG9ja0NvbHVtblxuICAgICAgICAgICAga2V5PXtibG9jay5pZH1cbiAgICAgICAgICAgIGJsb2NrPXtibG9ja31cbiAgICAgICAgICAgIGNvbElkeD17aX1cbiAgICAgICAgICAgIG9uU2VsZWN0PXtzZXRTZWxlY3RlZH1cbiAgICAgICAgICAgIHNob3dCZz17c2hvd0JnW2Jsb2NrLmlkXSB8fCBmYWxzZX1cbiAgICAgICAgICAgIG9uVG9nZ2xlQmc9e3RvZ2dsZUJnfVxuICAgICAgICAgIC8+XG4gICAgICAgICkpfVxuXG4gICAgICAgIHsvKiBDb250cmlidXRpb24gbm9kZSAqL31cbiAgICAgICAgPENvbnRyaWJ1dGlvbk5vZGUgLz5cblxuICAgICAgICB7LyogV2F0ZXJtYXJrICovfVxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIndhdGVybWFya1wiIHN0eWxlPXt7IGJvdHRvbTogMTgsIHBvc2l0aW9uOiAnYWJzb2x1dGUnLCB3aWR0aDogQ0FOVkFTX1cgfX0+XG4gICAgICAgICAgREJBIExpdGVyYXR1cmUgUmV2aWV3IOKAlCBHcmVub2JsZSDDiWNvbGUgZGUgTWFuYWdlbWVudCDigJQgUlE6IEhvdyBkbyBlbnRlcnByaXNlcyBlbnN1cmUgQUkgYWdlbnRzIGFjdCBpbiBsaW5lIHdpdGggb3JnYW5pemF0aW9uYWwgbWFuZGF0ZT9cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cblxuICAgICAgey8qIFVJIG92ZXJsYXlzICovfVxuICAgICAgPExlZ2VuZCAvPlxuXG4gICAgICB7c2VsZWN0ZWQgJiYgKFxuICAgICAgICA8U2lkZVBhbmVsIHNlbGVjdGlvbj17c2VsZWN0ZWR9IG9uQ2xvc2U9eygpID0+IHNldFNlbGVjdGVkKG51bGwpfSAvPlxuICAgICAgKX1cblxuICAgICAgey8qIFRvb2xiYXIgKi99XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInRvb2xiYXJcIj5cbiAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJ0b29sYmFyLWJ0blwiIG9uQ2xpY2s9eygpID0+IHpvb21UbygwLjMyKX0+T3ZlcnZpZXc8L2J1dHRvbj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0b29sYmFyLXNlcFwiIC8+XG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwidG9vbGJhci1idG5cIiBvbkNsaWNrPXsoKSA9PiBzZXRUcmFuc2Zvcm0odCA9PiAoeyAuLi50LCBzY2FsZTogTWF0aC5tYXgoMC4xOCwgdC5zY2FsZSAqIDAuODMpIH0pKX0+4oiSPC9idXR0b24+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidG9vbGJhci16b29tXCI+e01hdGgucm91bmQodHJhbnNmb3JtLnNjYWxlICogMTAwKX0lPC9kaXY+XG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwidG9vbGJhci1idG5cIiBvbkNsaWNrPXsoKSA9PiBzZXRUcmFuc2Zvcm0odCA9PiAoeyAuLi50LCBzY2FsZTogTWF0aC5taW4oMi4yLCB0LnNjYWxlICogMS4yKSB9KSl9Pis8L2J1dHRvbj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0b29sYmFyLXNlcFwiIC8+XG4gICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwidG9vbGJhci1idG5cIiBvbkNsaWNrPXsoKSA9PiB6b29tVG8oMC45KX0+RnVsbCBTaXplPC9idXR0b24+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidG9vbGJhci1zZXBcIiAvPlxuICAgICAgICB7QkxPQ0tTLm1hcChiID0+IChcbiAgICAgICAgICA8YnV0dG9uIGtleT17Yi5pZH0gY2xhc3NOYW1lPVwidG9vbGJhci1idG5cIlxuICAgICAgICAgICAgc3R5bGU9e3sgYm9yZGVyTGVmdDogYDNweCBzb2xpZCAke2IuY29sb3J9YCwgZm9udFNpemU6IDExIH19XG4gICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICAgIGNvbnN0IHZ3ID0gd2luZG93LmlubmVyV2lkdGg7XG4gICAgICAgICAgICAgIHNldFRyYW5zZm9ybSh7IHg6IC0oQ09MX1NUQVJUU1tiLmNvbElkeF0gKiAwLjcpICsgdncgKiAwLjA4LCB5OiAzMCwgc2NhbGU6IDAuNyB9KTtcbiAgICAgICAgICAgIH19PlxuICAgICAgICAgICAge2IudGl0bGV9XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICkpfVxuICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cInRvb2xiYXItYnRuXCJcbiAgICAgICAgICBzdHlsZT17eyBib3JkZXJMZWZ0OiAnM3B4IHNvbGlkICNCODg2MEInLCBmb250U2l6ZTogMTEgfX1cbiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRUcmFuc2Zvcm0oeyB4OiAtKENPTlRSSUJfWCAqIDAuNykgKyB3aW5kb3cuaW5uZXJXaWR0aCAqIDAuMDgsIHk6IDMwLCBzY2FsZTogMC43IH0pfT5cbiAgICAgICAgICBBTGlFbiDimIVcbiAgICAgICAgPC9idXR0b24+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuUmVhY3RET00uY3JlYXRlUm9vdChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncm9vdCcpKS5yZW5kZXIoPEFwcCAvPik7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQ0EsSUFBQUEsTUFBQSxHQUE4REMsS0FBSztFQUEzREMsUUFBUSxHQUFBRixNQUFBLENBQVJFLFFBQVE7RUFBRUMsU0FBUyxHQUFBSCxNQUFBLENBQVRHLFNBQVM7RUFBRUMsTUFBTSxHQUFBSixNQUFBLENBQU5JLE1BQU07RUFBRUMsV0FBVyxHQUFBTCxNQUFBLENBQVhLLFdBQVc7RUFBRUMsT0FBTyxHQUFBTixNQUFBLENBQVBNLE9BQU87O0FBRXpEO0FBQ0EsSUFBTUMsS0FBSyxHQUFHLEdBQUc7QUFDakIsSUFBTUMsT0FBTyxHQUFHLEdBQUc7QUFDbkIsSUFBTUMsVUFBVSxHQUFHLENBQUMsQ0FBQyxFQUFDLENBQUMsRUFBQyxDQUFDLEVBQUMsQ0FBQyxDQUFDLENBQUNDLEdBQUcsQ0FBQyxVQUFBQyxDQUFDO0VBQUEsT0FBSSxFQUFFLEdBQUdBLENBQUMsSUFBRUosS0FBSyxHQUFDQyxPQUFPLENBQUM7QUFBQSxFQUFDO0FBQzdELElBQU1JLFdBQVcsR0FBR0gsVUFBVSxDQUFDQyxHQUFHLENBQUMsVUFBQUcsQ0FBQztFQUFBLE9BQUlBLENBQUMsR0FBR04sS0FBSyxHQUFDLENBQUM7QUFBQSxFQUFDO0FBQ3BEO0FBQ0EsSUFBTU8sU0FBUyxHQUFHLEVBQUUsR0FBRyxDQUFDLElBQUVQLEtBQUssR0FBQ0MsT0FBTyxDQUFDO0FBQ3hD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</script></head>
+</head>
 <body>
-<div id="root"><div class="canvas-wrapper"><div class="canvas" style="width: 2190px; height: 2075px; transform: translate(30.24px, 32.36px) scale(0.46);"><svg style="position: absolute; top: 0px; left: 0px; width: 2190px; height: 2075px; pointer-events: none; overflow: visible;"><defs><filter id="glow"><fegaussianblur stdDeviation="2" result="blur"></fegaussianblur><fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite></filter></defs><g><g><defs><marker id="arr-0" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.5)"></polygon></marker></defs><line x1="332" y1="82" x2="478" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" marker-end="url(#arr-0)"></line><text x="405" y="60" text-anchor="middle" fill="rgba(255,255,255,0.42)" font-size="8.5" font-style="italic" font-family="Georgia, serif">OCT controls are intentionally incomplete (Adler &amp; Borys …</text></g><g><defs><marker id="arr-1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.5)"></polygon></marker></defs><line x1="782" y1="82" x2="928" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" marker-end="url(#arr-1)"></line><text x="855" y="60" text-anchor="middle" fill="rgba(255,255,255,0.42)" font-size="8.5" font-style="italic" font-family="Georgia, serif">AI agents remove the human completer — no socialization, …</text></g><g><defs><marker id="arr-2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.5)"></polygon></marker></defs><line x1="1232" y1="82" x2="1378" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" marker-end="url(#arr-2)"></line><text x="1305" y="60" text-anchor="middle" fill="rgba(255,255,255,0.42)" font-size="8.5" font-style="italic" font-family="Georgia, serif">Gap requires a versioned, machine-addressable mandate art…</text></g><g><defs><marker id="arr-3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.5)"></polygon></marker></defs><line x1="1682" y1="82" x2="1828" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" marker-end="url(#arr-3)"></line><text x="1755" y="60" text-anchor="middle" fill="rgba(255,255,255,0.42)" font-size="8.5" font-style="italic" font-family="Georgia, serif">Enterprise Story + ALiEn fills the governance vacuum</text></g><g opacity="0.8"><defs><marker id="xarr-0" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 330 174 C 570 139, 690 139, 930 174" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-0)" opacity="0.7"></path><text x="630" y="134" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">clan control → computable mandate</text></g><g opacity="0.8"><defs><marker id="xarr-1" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 330 364 C 930 329, 1230 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-1)" opacity="0.7"></path><text x="1080" y="288" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">intentional gap → Enterprise Story</text></g><g opacity="0.8"><defs><marker id="xarr-2" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 330 554 C 930 519, 1230 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-2)" opacity="0.7"></path><text x="1080" y="383" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">rebalancing logic → intervention ladder</text></g><g opacity="0.8"><defs><marker id="xarr-3" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 780 269 C 840 234, 870 234, 930 269" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-3)" opacity="0.7"></path><text x="855" y="229" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">principal-agent → non-human agents</text></g><g opacity="0.8"><defs><marker id="xarr-4" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 780 174 C 840 139, 870 139, 930 174" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-4)" opacity="0.7"></path><text x="855" y="134" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">algorithmic control replaces human judgment</text></g><g opacity="0.8"><defs><marker id="xarr-5" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 1230 364 C 1470 329, 1590 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-5)" opacity="0.7"></path><text x="1530" y="288" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">oversight insufficient → Sentinel design</text></g><g opacity="0.8"><defs><marker id="xarr-6" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 1680 364 C 1740 329, 1770 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-6)" opacity="0.7"></path><text x="1755" y="288" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">social contract → computable &amp; versioned</text></g><g opacity="0.8"><defs><marker id="xarr-7" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 1680 459 C 1740 424, 1770 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-7)" opacity="0.7"></path><text x="1755" y="335.5" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">accountability architecture → Sentinel/Oracle</text></g><g opacity="0.8"><defs><marker id="xarr-8" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><polygon points="0 0, 7 2.5, 0 5" fill="#FFA500"></polygon></marker></defs><path d="M 1680 744 C 1740 709, 1770 257, 1830 292" fill="none" stroke="#FFA500" stroke-width="1.3" stroke-dasharray="5,4" marker-end="url(#xarr-8)" opacity="0.7"></path><text x="1755" y="478" text-anchor="middle" fill="#FFA500" font-size="8" font-style="italic" font-family="Georgia, serif" opacity="0.8">Exaptation quadrant positioning</text></g></g></svg><div class="block-col" style="left: 30px; top: 0px;"><div class="block-header" style="position: absolute; top: 52px; left: 0px; background: linear-gradient(135deg, rgb(30, 58, 95), rgba(30, 58, 95, 0.8)); box-shadow: rgba(30, 58, 95, 0.333) 0px 4px 20px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;"><div class="block-header-title">BLOCK A</div><div class="block-header-sub">Organizational Control Theory</div></div><div style="position: absolute; top: 130px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 48, 79); border-color: rgb(45, 90, 142); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">A Conceptual Framework for the Design of Organizational Control Mechanisms</div><div class="paper-meta">Ouchi, 1979 · <em>Management Science</em></div></div></div><div style="position: absolute; top: 225px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 48, 79); border-color: rgb(45, 90, 142); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Control: Organizational and Economic Approaches</div><div class="paper-meta">Eisenhardt, 1985 · <em>Management Science</em></div></div></div><div style="position: absolute; top: 320px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 48, 79); border-color: rgb(45, 90, 142); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ THE PIVOT PAPER</span></div><div class="paper-title" style="font-size: 11px;">Two Types of Bureaucracy: Enabling and Coercive</div><div class="paper-meta">Adler &amp; Borys, 1996 · <em>Administrative Science Quarterly</em></div></div></div><div style="position: absolute; top: 415px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 48, 79); border-color: rgb(45, 90, 142); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Management of Complex Tasks in Organizations: Controlling the ISD Process</div><div class="paper-meta">Kirsch, 1996 · <em>Organization Science</em></div></div></div><div style="position: absolute; top: 510px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 48, 79); border-color: rgb(45, 90, 142); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Balancing and Rebalancing in the Creation and Evolution of Organizational Control</div><div class="paper-meta">Cardinal, Sitkin &amp; Long, 2004 · <em>Organization Science</em></div></div></div><div style="position: absolute; top: 609px; left: 0px; width: 300px; font-size: 8px; color: rgba(255, 255, 255, 0.28); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Strongly Relevant</div><div style="position: absolute; top: 621px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Markets, Bureaucracies, and Clans</div><div class="paper-meta">Ouchi, 1980 · <em>Administrative Science Quarterly</em></div></div></div><div style="position: absolute; top: 702px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Organizational Control: Two Functions</div><div class="paper-meta">Tannenbaum, 1962 · <em>Administrative Science Quarterly</em></div></div></div><div style="position: absolute; top: 783px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Unfolding of Control Mechanisms</div><div class="paper-meta">Kirsch et al., 2010 · <em>Organization Science</em></div></div></div><div style="position: absolute; top: 864px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Portfolios of Control in Outsourced IS Projects</div><div class="paper-meta">Choudhury &amp; Sabherwal, 2003 · <em>Information Systems Research</em></div></div></div><div style="position: absolute; top: 945px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Enacting Clan Control in Complex IT Projects</div><div class="paper-meta">Henderson &amp; Lee, 1992 · <em>MIS Quarterly</em></div></div></div><div style="position: absolute; top: 1026px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 48, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Controlling IS Development Projects (Client View)</div><div class="paper-meta">Kirsch et al., 2002 · <em>Organization Science</em></div></div></div><div class="bg-toggle" style="position: absolute; top: 1123px; left: 0px;">▼ Show 2 background papers</div></div><div class="block-col" style="left: 480px; top: 0px;"><div class="block-header" style="position: absolute; top: 52px; left: 0px; background: linear-gradient(135deg, rgb(27, 67, 50), rgba(27, 67, 50, 0.8)); box-shadow: rgba(27, 67, 50, 0.333) 0px 4px 20px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;"><div class="block-header-title">BLOCK B</div><div class="block-header-sub">Human Agency as Completion Mechanism</div></div><div style="position: absolute; top: 130px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ B/C BRIDGE</span></div><div class="paper-title" style="font-size: 11px;">Algorithms at Work: The New Contested Terrain of Control</div><div class="paper-meta">Kellogg, Valentine &amp; Christin, 2020 · <em>Academy of Management Annals</em></div></div></div><div style="position: absolute; top: 225px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Agency Theory: An Assessment and Review</div><div class="paper-meta">Eisenhardt, 1989 · <em>Management Science</em></div></div></div><div style="position: absolute; top: 320px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ ENTERPRISE CONTEXT</span></div><div class="paper-title" style="font-size: 11px;">Working and Organizing in the Age of the Learning Algorithm</div><div class="paper-meta">Faraj, Pachidi &amp; Sayegh, 2018 · <em>Information and Organization</em></div></div></div><div style="position: absolute; top: 415px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">When AI Becomes the Agent of the Firm</div><div class="paper-meta">Various, 2022 · <em>MIS Quarterly</em></div></div></div><div style="position: absolute; top: 510px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Rise of the Machines — Delegating Decisions to Autonomous AI</div><div class="paper-meta">Shrestha et al., 2019 · <em>California Management Review</em></div></div></div><div style="position: absolute; top: 605px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(22, 56, 41); border-color: rgb(45, 107, 74); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Algorithmic Management: Edge Case to Center Stage</div><div class="paper-meta">Duggan et al., 2020 · <em>Human Resource Management Journal</em></div></div></div><div style="position: absolute; top: 704px; left: 0px; width: 300px; font-size: 8px; color: rgba(255, 255, 255, 0.28); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Strongly Relevant</div><div style="position: absolute; top: 716px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 56, 41); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Working for an Algorithm: Power Asymmetries</div><div class="paper-meta">Rosenblat &amp; Stark, 2016 · <em>Big Data &amp; Society</em></div></div></div><div style="position: absolute; top: 797px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 56, 41); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Algorithms as Co-workers</div><div class="paper-meta">Möhlmann &amp; Zalmanson, 2017 · <em>ICIS Proceedings</em></div></div></div><div style="position: absolute; top: 878px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 56, 41); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">The Algorithm and the Org Chart</div><div class="paper-meta">Cameron et al., 2021 · <em>Work, Employment and Society</em></div></div></div><div style="position: absolute; top: 959px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(22, 56, 41); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Control and Surveillance in Work Practice</div><div class="paper-meta">Sewell &amp; Wilkinson, 1992 · <em>Sociology</em></div></div></div><div class="bg-toggle" style="position: absolute; top: 1056px; left: 0px;">▼ Show 1 background papers</div></div><div class="block-col" style="left: 930px; top: 0px;"><div class="block-header" style="position: absolute; top: 52px; left: 0px; background: linear-gradient(135deg, rgb(59, 31, 94), rgba(59, 31, 94, 0.8)); box-shadow: rgba(59, 31, 94, 0.333) 0px 4px 20px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;"><div class="block-header-title">BLOCK C</div><div class="block-header-sub">Algorithmic Control Disrupts Human Completion</div></div><div style="position: absolute; top: 130px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(48, 24, 79); border-color: rgb(91, 52, 144); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ ANCHOR</span></div><div class="paper-title" style="font-size: 11px;">Algorithmic Governance: A Modes of Governance Approach</div><div class="paper-meta">Musiani, 2013 · <em>Internet Policy Review</em></div></div></div><div style="position: absolute; top: 225px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(48, 24, 79); border-color: rgb(91, 52, 144); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ ANCHOR</span></div><div class="paper-title" style="font-size: 11px;">Agentic AI: Autonomous Intelligence for Complex Goals</div><div class="paper-meta">Masterman et al., 2024 · <em>IEEE Access</em></div></div></div><div style="position: absolute; top: 320px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(48, 24, 79); border-color: rgb(91, 52, 144); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ KEY CRITIQUE</span></div><div class="paper-title" style="font-size: 11px;">The Flaws of Policies Requiring Human Oversight of Government Algorithms</div><div class="paper-meta">Danaher et al., 2017 · <em>Government Information Quarterly</em></div></div></div><div style="position: absolute; top: 419px; left: 0px; width: 300px; font-size: 8px; color: rgba(255, 255, 255, 0.28); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Strongly Relevant</div><div style="position: absolute; top: 431px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Algorithmic Control &amp; Legitimacy (Gig Workers)</div><div class="paper-meta">Cameron &amp; Rahman, 2022 · <em>Administrative Science Quarterly</em></div></div></div><div style="position: absolute; top: 512px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Procedural Justice in Algorithmic Fairness</div><div class="paper-meta">Lee et al., 2019 · <em>ACM CHI</em></div></div></div><div style="position: absolute; top: 593px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Algorithmic Recourse Survey</div><div class="paper-meta">Verma et al., 2020 · <em>ACM Computing Surveys</em></div></div></div><div style="position: absolute; top: 674px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Conceptualising Contestability in AI Governance</div><div class="paper-meta">Alfrink et al., 2023 · <em>AI &amp; Society</em></div></div></div><div style="position: absolute; top: 755px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">AI Management Beyond the Hype</div><div class="paper-meta">Raisch &amp; Krakowski, 2021 · <em>Academy of Management Review</em></div></div></div><div style="position: absolute; top: 836px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">The Connected Workplace: AI Surveillance in Enterprise</div><div class="paper-meta">Zuboff, 2019 · <em>Harvard Business Review</em></div></div></div><div style="position: absolute; top: 917px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(48, 24, 79); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Algorithmic Management: Work Organisation Consequences</div><div class="paper-meta">Veen et al., 2020 · <em>Work, Employment and Society</em></div></div></div><div class="bg-toggle" style="position: absolute; top: 1014px; left: 0px;">▼ Show 6 background papers</div></div><div class="block-col" style="left: 1380px; top: 0px;"><div class="block-header" style="position: absolute; top: 52px; left: 0px; background: linear-gradient(135deg, rgb(92, 26, 26), rgba(92, 26, 26, 0.8)); box-shadow: rgba(92, 26, 26, 0.333) 0px 4px 20px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;"><div class="block-header-title">BLOCK D</div><div class="block-header-sub">AI Governance, Audit &amp; Proposed Contribution</div></div><div style="position: absolute; top: 130px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ THE GAP PAPER</span></div><div class="paper-title" style="font-size: 11px;">Principles Alone Cannot Guarantee Ethical AI</div><div class="paper-meta">Mittelstadt, 2019 · <em>Nature Machine Intelligence</em></div></div></div><div style="position: absolute; top: 225px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">From What to How: AI Ethics Tools</div><div class="paper-meta">Morley et al., 2020 · <em>Science and Engineering Ethics</em></div></div></div><div style="position: absolute; top: 320px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ ANTECEDENT</span></div><div class="paper-title" style="font-size: 11px;">Society-in-the-Loop: Programming the Algorithmic Social Contract</div><div class="paper-meta">Rahwan, 2018 · <em>Ethics and Information Technology</em></div></div></div><div style="position: absolute; top: 415px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 11px;">Accountability in AI: What It Is and How It Works</div><div class="paper-meta">Novelli, Taddeo &amp; Floridi, 2023 · <em>AI &amp; Society</em></div></div></div><div style="position: absolute; top: 510px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ DSR ANCHOR</span></div><div class="paper-title" style="font-size: 11px;">Design Science in Information Systems Research</div><div class="paper-meta">Hevner et al., 2004 · <em>MIS Quarterly</em></div></div></div><div style="position: absolute; top: 605px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ DSR PROCESS</span></div><div class="paper-title" style="font-size: 11px;">A Design Science Research Methodology for IS Research</div><div class="paper-meta">Peffers et al., 2007 · <em>Journal of MIS</em></div></div></div><div style="position: absolute; top: 700px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ CONTRIBUTION FRAMEWORK</span></div><div class="paper-title" style="font-size: 11px;">Positioning and Presenting DSR for Maximum Impact</div><div class="paper-meta">Gregor &amp; Hevner, 2013 · <em>MIS Quarterly</em></div></div></div><div style="position: absolute; top: 795px; left: 0px;"><div class="paper-card core gold-glow" style="height: 88px; background: rgb(78, 21, 21); border-color: rgb(139, 46, 46); box-shadow: rgba(184, 134, 11, 0.267) 0px 0px 0px 1.5px, rgba(0, 0, 0, 0.4) 0px 3px 14px, rgba(255, 255, 255, 0.04) 0px 1px 0px inset;"><div class="paper-icon"><span>📄</span><span class="paper-star">⭐ REGULATORY MANDATE</span></div><div class="paper-title" style="font-size: 11px;">EU AI Act (Regulation 2024/1689)</div><div class="paper-meta">European Parliament, 2024 · <em>Official Journal of the EU</em></div></div></div><div style="position: absolute; top: 894px; left: 0px; width: 300px; font-size: 8px; color: rgba(255, 255, 255, 0.28); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700;">Strongly Relevant</div><div style="position: absolute; top: 906px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Operationalising AI Governance through Ethics-Based Auditing</div><div class="paper-meta">Floridi et al., 2022 · <em>AI &amp; Society</em></div></div></div><div style="position: absolute; top: 987px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Ethics-Based Auditing to Develop Trustworthy AI</div><div class="paper-meta">Mökander &amp; Floridi, 2021 · <em>Minds and Machines</em></div></div></div><div style="position: absolute; top: 1068px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Auditing of AI: Legal, Ethical and Technical Approaches</div><div class="paper-meta">Koshiyama et al., 2022 · <em>AI Assurance</em></div></div></div><div style="position: absolute; top: 1149px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Governing AI Safety through Independent Audits</div><div class="paper-meta">Brundage et al., 2020 · <em>arXiv</em></div></div></div><div style="position: absolute; top: 1230px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Reviewable Automated Decision-Making</div><div class="paper-meta">Cobbe et al., 2021 · <em>Computer Law &amp; Security Review</em></div></div></div><div style="position: absolute; top: 1311px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Algorithmic Impact Assessments and Accountability</div><div class="paper-meta">Reisman et al., 2018 · <em>AI Now Institute</em></div></div></div><div style="position: absolute; top: 1392px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Institutionalised Distrust and Human Oversight (EU AI Act)</div><div class="paper-meta">Munn, 2022 · <em>AI &amp; Society</em></div></div></div><div style="position: absolute; top: 1473px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Seeing Like a Toolkit: AI Ethics Gaps</div><div class="paper-meta">Metcalf et al., 2021 · <em>Proceedings of the ACM</em></div></div></div><div style="position: absolute; top: 1554px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Where Responsible AI Meets Reality</div><div class="paper-meta">Rakova et al., 2021 · <em>CSCW</em></div></div></div><div style="position: absolute; top: 1635px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Principles-Based Ethics Assurance Pattern</div><div class="paper-meta">Ashmore et al., 2021 · <em>IEEE Software</em></div></div></div><div style="position: absolute; top: 1716px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Adaptive Responsible AI Governance Framework</div><div class="paper-meta">Cihon et al., 2020 · <em>AI &amp; Ethics</em></div></div></div><div style="position: absolute; top: 1797px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">Accountable AI — Holding Algorithms to Account</div><div class="paper-meta">Doshi-Velez et al., 2017 · <em>Science</em></div></div></div><div style="position: absolute; top: 1878px; left: 0px;"><div class="paper-card strong " style="height: 74px; background: rgb(78, 21, 21); border-color: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;"><div class="paper-icon"><span>📄</span></div><div class="paper-title" style="font-size: 10.5px;">The Emerging Agentic Enterprise</div><div class="paper-meta">Various, 2024 · <em>Harvard Business Review</em></div></div></div></div><div class="contrib-node" style="position: absolute; left: 1830px; top: 52px;"><div class="contrib-header"><div class="contrib-title">★ ENTERPRISE STORY + ALiEn</div><div class="contrib-subtitle">A versioned, machine-addressable organizational mandate artifact — the computable constitution AI agents reference at runtime, and governance actors inspect, adjudicate against, and update.</div></div><div class="contrib-body"><div class="actor-node"><div class="actor-header">🏛️ ARCHITECT</div><div class="actor-desc">Authors and proposes Story version updates. Cannot activate unilaterally. Submits Ratification Proposals → Human Governance Owner.</div></div><div class="contrib-arrow">↕</div><div class="actor-node"><div class="actor-header">👁️ SENTINEL</div><div class="actor-desc">Monitors production behavior continuously. Produces Evidence Packets linked to Story clauses → Oracle.</div></div><div class="contrib-arrow">↕</div><div class="actor-node"><div class="actor-header">⚖️ ORACLE</div><div class="actor-desc">Calibrates autonomy posture. Reversible intervention ladder. Escalates to Human Governance Owner when threshold exceeded.</div></div><div class="contrib-arrow">↕</div><div class="actor-node"><div class="actor-header">👤 HUMAN GOVERNANCE OWNER</div><div class="actor-desc">Constitutional ratification authority. Approves Story changes. Ratifies → Enterprise Story. Receives Oracle escalations.</div></div></div></div><div class="watermark" style="bottom: 18px; position: absolute; width: 2190px;">DBA Literature Review — Grenoble École de Management — RQ: How do enterprises ensure AI agents act in line with organizational mandate?</div></div><div class="legend"><div class="legend-title">Map Key</div><div class="legend-row"><div class="legend-dot" style="background: rgb(30, 58, 95);"></div><span>BLOCK A — Organizational Control Theory…</span></div><div class="legend-row"><div class="legend-dot" style="background: rgb(27, 67, 50);"></div><span>BLOCK B — Human Agency as…</span></div><div class="legend-row"><div class="legend-dot" style="background: rgb(59, 31, 94);"></div><span>BLOCK C — Algorithmic Control Disrupts…</span></div><div class="legend-row"><div class="legend-dot" style="background: rgb(92, 26, 26);"></div><span>BLOCK D — AI Governance, Audit…</span></div><div class="legend-row"><div class="legend-dot" style="background: rgb(184, 134, 11);"></div><span>Proposed Contribution (ALiEn)</span></div><div style="height: 6px;"></div><div class="legend-row"><div style="width: 20px; height: 2px; background: rgba(255, 255, 255, 0.4);"></div><span>Block transition arrows</span></div><div class="legend-row"><div style="width: 20px; height: 2px; background: rgb(255, 165, 0); border-top: 1px dashed rgb(255, 165, 0);"></div><span>Cross-block theoretical links</span></div><div class="legend-row"><div style="width: 14px; height: 14px; border: 1.5px solid rgb(184, 134, 11); border-radius: 3px; box-shadow: rgba(184, 134, 11, 0.333) 0px 0px 5px;"></div><span>Core / anchor paper</span></div><div style="font-size: 9px; color: rgb(68, 68, 68); margin-top: 6px; font-style: italic;">Click any card to expand details</div></div><div class="side-panel"><button class="panel-close">✕ Close</button><div class="panel-block-tag" style="background: rgba(92, 26, 26, 0.2); color: rgb(139, 46, 46); border: 1px solid rgba(139, 46, 46, 0.333);">BLOCK D — AI Governance, Audit &amp; Proposed Contribution</div><div class="panel-title">From What to How: AI Ethics Tools</div><div class="panel-meta">Morley et al., 2020 · <em>Science and Engineering Ethics</em></div><div class="panel-divider"></div><div class="panel-section"><div class="panel-section-label">▸ What it says</div><div class="panel-section-text">Reviews publicly available AI ethics tools and methods, mapping the gap between principled commitments and operational practice.</div></div><div class="panel-section"><div class="panel-section-label">▸ How it connects</div><div class="panel-section-text">Confirms Mittelstadt's claim empirically by showing the tools landscape — useful but incomplete.</div></div><div class="panel-section"><div class="panel-section-label">▸ Why here</div><div class="panel-section-text">Pairs with Mittelstadt to give the principles-to-practices gap a comprehensive dual citation.</div></div><div class="panel-divider"></div><div style="font-size: 9px; color: rgb(85, 85, 85); font-style: italic; text-align: center;">Tier: Core</div></div><div class="toolbar"><button class="toolbar-btn">Overview</button><div class="toolbar-sep"></div><button class="toolbar-btn">−</button><div class="toolbar-zoom">46%</div><button class="toolbar-btn">+</button><div class="toolbar-sep"></div><button class="toolbar-btn">Full Size</button><div class="toolbar-sep"></div><button class="toolbar-btn" style="border-left: 3px solid rgb(30, 58, 95); font-size: 11px;">BLOCK A</button><button class="toolbar-btn" style="border-left: 3px solid rgb(27, 67, 50); font-size: 11px;">BLOCK B</button><button class="toolbar-btn" style="border-left: 3px solid rgb(59, 31, 94); font-size: 11px;">BLOCK C</button><button class="toolbar-btn" style="border-left: 3px solid rgb(92, 26, 26); font-size: 11px;">BLOCK D</button><button class="toolbar-btn" style="border-left: 3px solid rgb(184, 134, 11); font-size: 11px;">ALiEn ★</button></div></div></div>
+<div id="root"></div>
 
 <script type="text/babel">
 const { useState, useEffect, useRef, useCallback, useMemo } = React;
@@ -1497,6 +786,5 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script>
-
-
-</body></html>
+</body>
+</html>

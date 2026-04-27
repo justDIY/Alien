@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italy Option D · Amalfi — Noujaims & Eids — May 22–31</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F9F6F0;--warm:#FEFCF8;--gold:#B8922A;--gold-l:#E8C96A;
+  --terra:#C4623A;--green:#3A6B47;--blue:#2A5080;--purple:#5C3D8F;--teal:#0F6E56;
+  --ink:#1A1410;--ink-m:#3D3028;--ink-l:#6E5E50;
+  --bdr:rgba(26,20,16,0.10);--bdr-s:rgba(26,20,16,0.20);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);font-size:15px;line-height:1.6}
+
+.trip-header{background:var(--ink);color:var(--cream);padding:44px 48px 32px;position:relative;overflow:hidden}
+.trip-header::before{content:'ITALIA';position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:110px;color:rgba(255,255,255,0.04);letter-spacing:8px;pointer-events:none;white-space:nowrap}
+.trip-header h1{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;margin-bottom:4px}
+.trip-header h1 em{color:var(--gold-l);font-style:italic}
+.badge-d{display:inline-block;background:rgba(184,146,42,0.25);border:1px solid rgba(232,201,106,0.4);color:var(--gold-l);font-size:11px;font-weight:500;padding:3px 10px;border-radius:20px;letter-spacing:.5px;margin-bottom:10px}
+.trip-meta{display:flex;gap:28px;margin-top:20px;flex-wrap:wrap}
+.meta-item{display:flex;flex-direction:column;gap:2px}
+.meta-label{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.4);font-weight:500}
+.meta-value{font-size:14px;font-weight:500;color:rgba(255,255,255,0.88)}
+.fam-tags{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.fam-tag{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:6px;padding:7px 13px;font-size:13px;color:rgba(255,255,255,0.72)}
+.fam-tag strong{color:var(--gold-l);font-weight:500}
+
+.route-visual{background:rgba(255,255,255,0.04);border-top:1px solid rgba(255,255,255,0.07);padding:14px 48px;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none}
+.route-visual::-webkit-scrollbar{display:none}
+.rv-city{display:flex;flex-direction:column;align-items:center;gap:3px;padding:0 8px;flex-shrink:0}
+.rv-dot{width:10px;height:10px;border-radius:50%}
+.rv-name{font-size:11px;font-weight:500;white-space:nowrap}
+.rv-nights{font-size:10px;opacity:.45}
+.rv-arr{color:rgba(255,255,255,0.2);font-size:18px;padding:0 2px;flex-shrink:0;margin-bottom:12px}
+
+.tabs-nav{position:sticky;top:0;z-index:100;background:var(--warm);border-bottom:1px solid var(--bdr);padding:0 48px;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.tabs-nav::-webkit-scrollbar{display:none}
+.tab-btn{padding:13px 14px;font-size:12px;font-weight:500;color:var(--ink-l);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:'DM Sans',sans-serif}
+.tab-btn:hover{color:var(--ink)}.tab-btn.active{color:var(--terra);border-bottom-color:var(--terra)}
+
+.content{max-width:900px;margin:0 auto;padding:36px 48px 80px}
+.day-section{display:none}.day-section.visible{display:block}
+
+.day-card{background:var(--warm);border:1px solid var(--bdr);border-radius:12px;overflow:hidden}
+.day-head{padding:20px 28px 16px;border-bottom:1px solid var(--bdr);display:flex;align-items:flex-start;gap:16px}
+.day-num{flex-shrink:0;width:52px;height:52px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:.3px}
+.day-num .n{font-family:'Playfair Display',serif;font-size:22px;line-height:1}
+.day-info{flex:1}
+.day-info h2{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;margin-bottom:2px}
+.day-info .dd{font-size:13px;color:var(--ink-l);margin-bottom:5px}
+.dtag{flex-shrink:0;padding:4px 11px;border-radius:20px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.4px;align-self:flex-start;margin-top:4px}
+.drive-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:2px 9px;border-radius:10px;background:#FEF3E2;color:#7A4500;border:1px solid #F0C888;font-weight:500;margin-right:4px;margin-top:2px}
+.ferry-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:2px 9px;border-radius:10px;background:#D8F0E8;color:var(--teal);border:1px solid #8AD4B8;font-weight:500;margin-right:4px;margin-top:2px}
+.alert-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:2px 9px;border-radius:10px;background:#FFF3CD;color:#664D00;border:1px solid #FFD966;font-weight:500;margin-top:2px}
+
+.th-travel .day-num{background:#EAE4D5;color:var(--ink-m)}.th-travel .dtag{background:#EAE4D5;color:var(--ink-m)}.th-travel .edot{background:var(--ink-m)}
+.th-siena .day-num{background:#DFF0D0;color:var(--green)}.th-siena .dtag{background:#DFF0D0;color:var(--green)}.th-siena .edot{background:var(--green)}
+.th-florence .day-num{background:#EAE0F5;color:var(--purple)}.th-florence .dtag{background:#EAE0F5;color:var(--purple)}.th-florence .edot{background:var(--purple)}
+.th-amalfi .day-num{background:#D8F0E8;color:var(--teal)}.th-amalfi .dtag{background:#D8F0E8;color:var(--teal)}.th-amalfi .edot{background:var(--teal)}
+.th-pompei .day-num{background:#D8E8F5;color:var(--blue)}.th-pompei .dtag{background:#D8E8F5;color:var(--blue)}.th-pompei .edot{background:var(--blue)}
+.th-rome .day-num{background:#F5E8E0;color:var(--terra)}.th-rome .dtag{background:#F5E8E0;color:var(--terra)}.th-rome .edot{background:var(--terra)}
+
+.schedule{padding:0 28px 22px}
+.tb{display:grid;grid-template-columns:76px 1fr;position:relative}
+.tb::before{content:'';position:absolute;left:75px;top:26px;bottom:-4px;width:1px;background:var(--bdr)}
+.tb:last-child::before{display:none}
+.tc{padding:20px 14px 4px 0;font-size:12px;font-weight:500;color:var(--ink-l);text-align:right;line-height:1.3}
+.ec{padding:15px 0 15px 20px;position:relative}
+.edot{position:absolute;left:-27px;top:22px;width:13px;height:13px;border-radius:50%;border:2px solid var(--warm);z-index:2}
+.etitle{font-weight:500;font-size:15px;color:var(--ink);margin-bottom:3px}
+.edesc{font-size:13px;color:var(--ink-l);line-height:1.55}
+.etags{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.etag{font-size:11px;padding:2px 7px;border-radius:4px;background:var(--cream);color:var(--ink-l);border:1px solid var(--bdr);font-weight:500}
+.etag.book{background:#FEF3E2;color:#7A4500;border-color:#F0C888}
+.etag.kids{background:#E8F5E0;color:#255018;border-color:#A8D490}
+.etag.food{background:#FDE8E8;color:#6A1818;border-color:#ECA8A8}
+.etag.drive{background:#E8F0FE;color:#1A3A68;border-color:#A8C0E8}
+.etag.ferry{background:#D8F0E8;color:var(--teal);border-color:#8AD4B8}
+.etag.history{background:#F3EFE8;color:#5C3D00;border-color:#D4B888}
+.etag.hotel{background:#F5EBF8;color:#4A1068;border-color:#C8A0D8}
+
+.tip-box{background:#F4F0E6;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:11px 15px;margin-top:8px;font-size:13px;color:var(--ink-m);line-height:1.5}
+.tip-box strong{color:#8B6010;font-weight:500}
+.warn-box{background:#FFF8E8;border-left:3px solid #D4A017;border-radius:0 8px 8px 0;padding:11px 15px;margin-top:8px;font-size:13px;color:#5C3D00;line-height:1.5}
+.warn-box strong{color:#7A5000;font-weight:500}
+.sea-box{background:#E8F5F0;border-left:3px solid var(--teal);border-radius:0 8px 8px 0;padding:11px 15px;margin-top:8px;font-size:13px;color:#0A3A22;line-height:1.5}
+.sea-box strong{color:#0A5A32;font-weight:500}
+.history-box{background:#F0EEF8;border-left:3px solid #8A6FC0;border-radius:0 8px 8px 0;padding:11px 15px;margin-top:8px;font-size:13px;color:#2A1A4A;line-height:1.5}
+.history-box strong{color:#4A2A88;font-weight:500}
+.hotel-box{background:#F8F0FF;border-left:3px solid #8A60C0;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:8px;font-size:13px;color:#2A1040;line-height:1.6}
+.hotel-box strong{color:#4A1888;font-weight:500}
+.hotel-name{font-weight:500;font-size:14px;color:#2A1040;margin-bottom:2px}
+.hotel-why{font-size:12px;color:#5A3A80;margin-bottom:6px}
+
+.section-label{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:5px}
+.section-sub{font-size:13px;color:var(--ink-l);margin-bottom:22px}
+
+.night-bar{display:flex;gap:0;margin-bottom:22px;border-radius:10px;overflow:hidden;border:1px solid var(--bdr)}
+.nb-seg{padding:13px 10px;text-align:center}
+.nbs-label{font-size:10px;text-transform:uppercase;letter-spacing:.8px;opacity:.7;margin-bottom:2px;font-weight:500}
+.nbs-val{font-size:20px;font-family:'Playfair Display',serif}
+.nbs-dates{font-size:10px;margin-top:2px;opacity:.75}
+
+.ovr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:22px}
+.ovr-mini{background:var(--warm);border:1px solid var(--bdr);border-radius:8px;padding:10px 6px;cursor:pointer;transition:all .15s;text-align:center}
+.ovr-mini:hover{border-color:var(--terra)}
+.od{font-size:10px;color:var(--ink-l)}.oe{font-size:18px;margin:3px 0}.ot{font-size:11px;font-weight:500;color:var(--ink);line-height:1.3}
+
+.drive-table{background:var(--warm);border:1px solid var(--bdr);border-radius:10px;overflow:hidden;margin-bottom:22px}
+.drive-table h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-l);font-weight:500;padding:12px 16px;border-bottom:1px solid var(--bdr)}
+.dr{display:grid;grid-template-columns:1fr 28px 1fr 110px 1fr;gap:0;border-bottom:1px solid var(--bdr)}
+.dr:last-child{border-bottom:none}
+.dr-cell{padding:10px 14px;font-size:13px;color:var(--ink-m)}
+.dr-cell.label{font-size:11px;color:var(--ink-l);font-weight:500;text-transform:uppercase;letter-spacing:.5px;background:var(--cream)}
+.dr-arr{padding:10px 0;font-size:15px;color:var(--ink-l);text-align:center;align-self:center}
+.dr-time{font-weight:500}
+.dr-time.ok{color:var(--green)}.dr-time.med{color:#9A6010}.dr-time.long{color:var(--terra)}
+.dr-note{font-size:11px;color:var(--ink-l);padding:10px 14px;align-self:center}
+
+.logi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.logi-card{background:var(--warm);border:1px solid var(--bdr);border-radius:10px;padding:16px 18px}
+.logi-card h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ink-l);font-weight:500;margin-bottom:12px}
+.li{display:flex;gap:9px;margin-bottom:8px;font-size:13px;line-height:1.45}
+.li .ic{flex-shrink:0;width:20px;text-align:center}
+.li .tx{color:var(--ink-m)}.li .tx strong{color:var(--ink);font-weight:500}
+
+.flight-alert{background:#FFF3CD;border:1px solid #FFD966;border-radius:10px;padding:13px 18px;margin-bottom:20px;font-size:13px;color:#4A3500;line-height:1.5}
+.ask-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:7px 13px;border-radius:8px;border:1px solid var(--bdr-s);background:transparent;cursor:pointer;color:var(--ink-l);margin-top:10px;margin-right:8px;transition:all .15s;font-family:'DM Sans',sans-serif}
+.ask-btn:hover{background:var(--cream)}
+.footer{background:var(--ink);color:rgba(255,255,255,0.4);text-align:center;padding:22px;font-size:12px;letter-spacing:.5px}
+</style>
+</head>
+<body>
+
+<div class="trip-header">
+  <div class="badge-d">Option D · Final · Amalfi base</div>
+  <h1>Noujaims &amp; Eids in <em>Italy</em></h1>
+  <div class="trip-meta">
+    <div class="meta-item"><span class="meta-label">Fly in</span><span class="meta-value">Bologna BLQ · May 22</span></div>
+    <div class="meta-item"><span class="meta-label">Fly out</span><span class="meta-value">Rome FCO · May 31</span></div>
+    <div class="meta-item"><span class="meta-label">Coast base</span><span class="meta-value">Amalfi town · 2 nights · on the sea</span></div>
+    <div class="meta-item"><span class="meta-label">Pompeii transfer</span><span class="meta-value">Ferry Amalfi → Salerno + train</span></div>
+  </div>
+  <div class="fam-tags">
+    <div class="fam-tag"><strong>Noujaims:</strong> You &amp; wife · Alex 16 · Cyril 13</div>
+    <div class="fam-tag"><strong>Eids:</strong> Roland &amp; Kenny · Sophie 11 · Gio 6</div>
+  </div>
+</div>
+
+<div class="route-visual">
+  <div class="rv-city"><div class="rv-dot" style="background:rgba(255,255,255,0.3)"></div><div class="rv-name" style="color:rgba(255,255,255,0.45)">DXB</div><div class="rv-nights">Dubai</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#E8C96A"></div><div class="rv-name" style="color:#E8C96A">Bologna</div><div class="rv-nights">land · Day 1</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#C4DDB0"></div><div class="rv-name" style="color:#C4DDB0">Siena</div><div class="rv-nights">1 night</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#C4DDB0"></div><div class="rv-name" style="color:#C4DDB0">Florence</div><div class="rv-nights">day trip</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#C4DDB0"></div><div class="rv-name" style="color:#C4DDB0">Pienza</div><div class="rv-nights">morning</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#9FE1CB"></div><div class="rv-name" style="color:#9FE1CB">Amalfi</div><div class="rv-nights">2 nights · on the sea</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#B5D4F4"></div><div class="rv-name" style="color:#B5D4F4">Pompeii</div><div class="rv-nights">day trip by ferry</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#9FE1CB"></div><div class="rv-name" style="color:#9FE1CB">Positano</div><div class="rv-nights">ferry day</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:#F0C4A8"></div><div class="rv-name" style="color:#F0C4A8">Rome</div><div class="rv-nights">3 nights</div></div>
+  <div class="rv-arr">›</div>
+  <div class="rv-city"><div class="rv-dot" style="background:rgba(255,255,255,0.3)"></div><div class="rv-name" style="color:rgba(255,255,255,0.45)">FCO</div><div class="rv-nights">fly home</div></div>
+</div>
+
+<nav class="tabs-nav">
+  <button class="tab-btn active" onclick="go('overview')">Overview</button>
+  <button class="tab-btn" onclick="go('d1')">May 22 · Bologna → Siena</button>
+  <button class="tab-btn" onclick="go('d2')">May 23 · Florence</button>
+  <button class="tab-btn" onclick="go('d3')">May 24 · Pienza → Amalfi</button>
+  <button class="tab-btn" onclick="go('d4')">May 25 · Amalfi · beach day</button>
+  <button class="tab-btn" onclick="go('d5')">May 26 · Pompeii day trip</button>
+  <button class="tab-btn" onclick="go('d6')">May 27 · Positano ferry · → Rome</button>
+  <button class="tab-btn" onclick="go('d7')">May 28 · Rome I · Colosseum</button>
+  <button class="tab-btn" onclick="go('d8')">May 29 · Rome II · Vatican</button>
+  <button class="tab-btn" onclick="go('d9')">May 30 · Rome III · Free day</button>
+  <button class="tab-btn" onclick="go('d10')">May 31 · Fly FCO</button>
+  <button class="tab-btn" onclick="go('logistics')">Logistics</button>
+</nav>
+
+<div class="content">
+
+<!-- ══════════ OVERVIEW ══════════ -->
+<div class="day-section visible" id="s-overview">
+  <div class="section-label">Option D · Amalfi edition</div>
+  <div class="section-sub">Bologna → Tuscany → Amalfi town (on the beach) → Rome. One clean southward route, nothing backtracked.</div>
+
+  <div class="night-bar">
+    <div class="nb-seg" style="background:#EAE4D5;color:var(--ink-m);flex:1"><div class="nbs-label">Transit</div><div class="nbs-val">1</div><div class="nbs-dates">May 22 · land + drive</div></div>
+    <div class="nb-seg" style="background:#DFF0D0;color:var(--green);flex:2"><div class="nbs-label">Tuscany</div><div class="nbs-val">2</div><div class="nbs-dates">May 22–24 · Siena + Florence + Pienza</div></div>
+    <div class="nb-seg" style="background:#D8F0E8;color:var(--teal);flex:2"><div class="nbs-label">Amalfi town</div><div class="nbs-val">2</div><div class="nbs-dates">May 24–27 · on the sea · beach + Pompeii</div></div>
+    <div class="nb-seg" style="background:#F5E8E0;color:var(--terra);flex:3"><div class="nbs-label">Rome</div><div class="nbs-val">3</div><div class="nbs-dates">May 27–31 · Colosseum · Vatican · free day</div></div>
+    <div class="nb-seg" style="background:#EAE4D5;color:var(--ink-m);flex:1"><div class="nbs-label">Fly</div><div class="nbs-val">↑</div><div class="nbs-dates">May 31 · FCO</div></div>
+  </div>
+
+  <div class="ovr-grid">
+    <div class="ovr-mini" onclick="go('d1')"><div class="od">May 22</div><div class="oe">✈️</div><div class="ot">Land Bologna → Siena</div></div>
+    <div class="ovr-mini" onclick="go('d2')"><div class="od">May 23</div><div class="oe">🎨</div><div class="ot">Florence · David · Ponte Vecchio</div></div>
+    <div class="ovr-mini" onclick="go('d3')"><div class="od">May 24</div><div class="oe">🚗</div><div class="ot">Pienza morning → Amalfi arrive</div></div>
+    <div class="ovr-mini" onclick="go('d4')"><div class="od">May 25</div><div class="oe">🌊</div><div class="ot">Amalfi · beach · relax · town</div></div>
+    <div class="ovr-mini" onclick="go('d5')"><div class="od">May 26</div><div class="oe">🌋</div><div class="ot">Pompeii · ferry + train day trip</div></div>
+    <div class="ovr-mini" onclick="go('d6')"><div class="od">May 27</div><div class="oe">⛴</div><div class="ot">Positano ferry · drive to Rome</div></div>
+    <div class="ovr-mini" onclick="go('d7')"><div class="od">May 28</div><div class="oe">🏛</div><div class="ot">Colosseum · Forum · Aventine</div></div>
+    <div class="ovr-mini" onclick="go('d8')"><div class="od">May 29</div><div class="oe">⛪</div><div class="ot">Vatican · Pantheon · Castel</div></div>
+    <div class="ovr-mini" onclick="go('d9')"><div class="od">May 30</div><div class="oe">🌳</div><div class="ot">Borghese · Trevi · free Rome</div></div>
+    <div class="ovr-mini" onclick="go('d10')"><div class="od">May 31</div><div class="oe">✈️</div><div class="ot">Last espresso · fly FCO</div></div>
+  </div>
+
+  <div class="hotel-box">
+    <strong>Why Amalfi town is the right base for this group</strong><br><br>
+    <span class="hotel-name">Hotel Santa Caterina ★★★★★</span>
+    <div class="hotel-why">Best hotel on the Amalfi Coast · clifftop position · private sea lift to rock platform · stunning terrace restaurant · exceptional service · book the family suite or connecting rooms</div>
+    <span class="hotel-name">Hotel Miramalfi ★★★★</span>
+    <div class="hotel-why">Just outside town · directly on the sea · private sea access · gorgeous terrace · quieter than the centre · excellent for families · very good value</div>
+    <span class="hotel-name">Hotel Marina Riviera ★★★★</span>
+    <div class="hotel-why">Right on the seafront · beautiful rooms · intimate · great service · sea-view terrace · 2min walk to the beach and the port</div>
+    <br>
+    Amalfi town has a proper car park (Parking Luna Rossa) right at the entrance — leave both cars there for 2 nights and walk everywhere. The ferry dock is 3min from every hotel. Pompeii is reached by ferry to Salerno (35min) then fast train (25min) — no car needed. The beach is in front of you. The Duomo is 3min away. In the evening when day-trippers leave, the town becomes genuinely beautiful and calm.
+  </div>
+
+  <div class="drive-table">
+    <h3>All driving legs</h3>
+    <div class="dr">
+      <div class="dr-cell label">From</div><div class="dr-arr"></div>
+      <div class="dr-cell label">To</div>
+      <div class="dr-cell label">Time</div>
+      <div class="dr-note label">Context</div>
+    </div>
+    <div class="dr">
+      <div class="dr-cell">Bologna BLQ</div><div class="dr-arr">›</div>
+      <div class="dr-cell">Siena</div>
+      <div class="dr-cell"><span class="dr-time med">2h 00min</span></div>
+      <div class="dr-note">Day 1 · A1 south · all motorway</div>
+    </div>
+    <div class="dr">
+      <div class="dr-cell">Siena</div><div class="dr-arr">›</div>
+      <div class="dr-cell">Florence (day trip)</div>
+      <div class="dr-cell"><span class="dr-time ok">1h 20min</span></div>
+      <div class="dr-note">Day 2 · SS2 north · return same day</div>
+    </div>
+    <div class="dr">
+      <div class="dr-cell">Siena → Pienza</div><div class="dr-arr">›</div>
+      <div class="dr-cell">Amalfi town</div>
+      <div class="dr-cell"><span class="dr-time long">4h 30min total</span></div>
+      <div class="dr-note">Day 3 · leave Pienza by 1pm · A1 + A3 + SS163</div>
+    </div>
+    <div class="dr">
+      <div class="dr-cell">Amalfi</div><div class="dr-arr">›</div>
+      <div class="dr-cell">Pompeii</div>
+      <div class="dr-cell"><span class="dr-time ok">No driving</span></div>
+      <div class="dr-note">Day 5 · ferry to Salerno + train · 1hr total each way</div>
+    </div>
+    <div class="dr">
+      <div class="dr-cell">Amalfi</div><div class="dr-arr">›</div>
+      <div class="dr-cell">Rome</div>
+      <div class="dr-cell"><span class="dr-time med">3h 00min</span></div>
+      <div class="dr-note">Day 6 · afternoon · A3 + A1 north · return cars in Rome</div>
+    </div>
+  </div>
+
+  <div class="flight-alert">
+    ⚠️ <strong>Critical — Day 1 timing:</strong> This plan requires landing Bologna BLQ by <strong>11:00am at the latest.</strong> After immigration and bags (~60min), you drive by 12:30pm and reach Siena by 2:30–3pm — leaving a real afternoon in the city. If your flight lands after 11am, spend night 1 in Bologna and drive to Siena on Day 2 morning, adjusting the whole schedule by one day. Confirm the BLQ arrival time before finalising.
+  </div>
+
+  <div class="logi-grid">
+    <div class="logi-card">
+      <h3>Accommodation summary</h3>
+      <div class="li"><span class="ic">🌿</span><div class="tx"><strong>Siena (1 night · May 22–23):</strong> Hotel inside the walls. Grand Hotel Continental, Palazzo Ravizza, or Hotel Athena. Book immediately.</div></div>
+      <div class="li"><span class="ic">🌊</span><div class="tx"><strong>Amalfi town (2 nights · May 24–27):</strong> Hotel Santa Caterina (best, splurge), Hotel Miramalfi (excellent value, on the sea), or Hotel Marina Riviera (seafront). Book now — Amalfi in late May fills months ahead.</div></div>
+      <div class="li"><span class="ic">🏛</span><div class="tx"><strong>Rome (3 nights · May 27–31):</strong> 2 adjacent apartments, Prati neighbourhood near Vatican. Or a family hotel in Trastevere.</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Cars — complete plan</h3>
+      <div class="li"><span class="ic">🚗</span><div class="tx"><strong>Pick up:</strong> Bologna BLQ on arrival May 22. 1× 7-seat minivan + 1× large sedan. Book now.</div></div>
+      <div class="li"><span class="ic">🅿️</span><div class="tx"><strong>Amalfi parking:</strong> Parking Luna Rossa — large multi-storey at the town entrance, ~€25/day. Leave both cars here for 2 nights. Walk everywhere in Amalfi. No car needed for Pompeii (ferry) or town exploration.</div></div>
+      <div class="li"><span class="ic">🚗</span><div class="tx"><strong>Drive to Rome Day 6:</strong> Cars collected from parking, drive A3 + A1 north to Rome (~3hrs). Return cars at Rome depot near Termini or Prati on arrival.</div></div>
+      <div class="li"><span class="ic">⚠️</span><div class="tx"><strong>SS163 Amalfi road:</strong> The coastal road is narrow. Drive it once to arrive, park, and don't touch the cars again until Rome departure. Use ferries for all coast exploration.</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Pre-book · urgency order</h3>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Amalfi hotel (2 nights):</strong> Hotel Santa Caterina, Miramalfi, or Marina Riviera. May fills months ahead for the best rooms.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Siena hotel (1 night):</strong> Inside the walls. Grand Hotel Continental or Palazzo Ravizza.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Rome apartments (3 nights):</strong> 2 adjacent units, Prati. Book now.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Car rental:</strong> BLQ pickup May 22, Rome return May 27. 2 vehicles.</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>Accademia (David):</strong> galleriaaccademia.it · May 23 · ~€12/adult</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>Pompeii:</strong> pompeiisites.org · May 26 · 9am · ~€18/adult</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>Colosseum Full Experience:</strong> coopculture.it · May 28 · 9am · ~€22/adult</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>Vatican Museums:</strong> museivaticani.va · May 29 · 8am · ~€20/adult</div></div>
+      <div class="li"><span class="ic">🟡</span><div class="tx"><strong>Borghese Gallery:</strong> tosc.it · May 30 · ~€15 · only 360 visitors per slot</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Pompeii from Amalfi — the route</h3>
+      <div class="li"><span class="ic">⛴</span><div class="tx"><strong>7:30am:</strong> Ferry from Amalfi port → Salerno. Journey: 35min. Ferries run from early morning. ~€8/person.</div></div>
+      <div class="li"><span class="ic">🚆</span><div class="tx"><strong>8:15am:</strong> Fast train Salerno → Pompei Scavi station. Journey: 25min. Trenitalia regional. ~€3/person.</div></div>
+      <div class="li"><span class="ic">🌋</span><div class="tx"><strong>9:00am:</strong> Enter Pompeii at opening. 3.5hrs inside. Depart by 12:30pm before heat and crowds peak.</div></div>
+      <div class="li"><span class="ic">🚆</span><div class="tx"><strong>Return:</strong> Train Pompeii → Salerno, ferry Salerno → Amalfi. Back by 3pm. Afternoon at the beach.</div></div>
+      <div class="li"><span class="ic">💡</span><div class="tx">Total round trip: ~2hrs travel each way. No cars, no parking, no coastal road stress. The most relaxed way to do Pompeii from the coast.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ DAY 1 ══════════ -->
+<div class="day-section" id="s-d1">
+<div class="day-card th-siena">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">1</span></div>
+    <div class="day-info">
+      <h2>Land Bologna → drive to Siena → first evening in the medieval city</h2>
+      <div class="dd">Thursday, May 22 · The long arrival day · must land by 11am</div>
+      <div><span class="drive-pill">🚗 Bologna → Siena · 2hrs · A1 motorway</span><span class="alert-pill">⚠ Land by 11am</span></div>
+    </div>
+    <div class="dtag">Travel + Siena</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">Land</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Arrive Bologna Marconi Airport (BLQ)</div>
+      <div class="edesc">BLQ is small and efficient — immigration and baggage typically 45–60min. Pick up your two pre-booked rental cars. Load 8 people and 10 days of luggage. The drive south to Siena is 2 hours of clean motorway on the A1 autostrada — no complexity, no narrow roads, no stress. Leave the airport by 12:30pm at the latest.</div>
+      <div class="warn-box"><strong>The timing gate:</strong> Land by 11am → clear customs by 12pm → drive by 12:30pm → Siena by 2:30–3pm, leaving a real afternoon in the city. If you land later than 11am, the afternoon collapses and the whole value of Day 1 is lost. Check your flight arrival time before committing to this plan.</div>
+    </div></div>
+    <div class="tb"><div class="tc">~3:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Arrive Siena — park and check in</div>
+      <div class="edesc">Park in Parcheggio Il Campo or Santa Caterina — large underground garages just outside the medieval walls, €2/hr or negotiate a daily rate. Walk through the city gates into the pedestrianised historic centre. Your hotel is inside the walls. Siena's centro is completely car-free — this is the last time you see the vehicles until Day 3. Drop bags, change, have a coffee at the nearest bar. You are now standing in a perfectly preserved 13th-century city.</div>
+      <div class="tip-box"><strong>Hotels inside the Siena walls:</strong> Grand Hotel Continental on Banchi di Sopra — the main street, frescoed interiors, central location, the best choice. Palazzo Ravizza — quieter, beautiful garden, near Porta Laterino. Hotel Athena — reliable, good value, 10min from the Campo. All have parking agreements with nearby garages.</div>
+    </div></div>
+    <div class="tb"><div class="tc">4:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Piazza del Campo — the greatest medieval square in Italy</div>
+      <div class="edesc">Walk directly to the Campo. The shell-shaped square — uniquely sloped like a theatre, surrounded by 13th-century palaces on every side — is unlike anything you've seen. Sit on the slope (everyone does; the design invites it). Order Aperol Spritz for the adults, something cold for the kids. Look at the Torre del Mangia rising 88m at the far end. This is where the Palio horse race happens — the most intense civic ritual in Europe, run continuously since 1283. You can feel the arena quality of the space even when it's empty. Gio will want to run from one side to the other. Let him.</div>
+      <div class="etags"><span class="etag history">Designed 1297 · shell shape represents the Virgin Mary's cloak · UNESCO World Heritage</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">5:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Siena Duomo — exterior and brief interior</div>
+      <div class="edesc">5min walk from the Campo. The black and white striped marble facade — Gothic gold mosaics, carved prophets, 300 years of accumulated decoration — is one of Italy's most striking. Go inside for 20min: the striped interior, the inlaid marble floor (56 narrative panels across the entire floor surface, partially visible year-round), and Nicola Pisano's extraordinary pulpit. Peek through the door of the Piccolomini Library — 15th century frescoes in perfect vivid colour, free to view from the entrance. You'll see enough today to understand why tomorrow's Florence comparison is interesting.</div>
+      <div class="etags"><span class="etag book">€5 basic entry · late afternoon, fewer crowds</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">7:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Contrade walk — Siena's living medieval neighbourhoods</div>
+      <div class="edesc">Walk any direction from the Campo and find the 17 contrade neighbourhood symbols painted on street corners — the Eagle, the Wolf, the Porcupine, the Goose, the Caterpillar. Each neighbourhood has its own church, museum, fountain, and centuries-old civic identity. Ask at the hotel which contrada you're in. The staff will tell you immediately — and then tell you which contrada is the enemy. This is not historical re-enactment. It is alive.</div>
+      <div class="etags"><span class="etag kids">Spot the animal symbols on street corners — the best scavenger hunt in Tuscany</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">8:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — Siena</div>
+      <div class="edesc"><strong>La Taverna di San Giuseppe:</strong> underground cave dining room carved into medieval rock beneath the city — one of the most atmospheric restaurants in Tuscany. Book ahead. Or <strong>Trattoria Papei</strong> on Piazza del Mercato, just behind the Campo — family-friendly, outdoor tables on a beautiful quiet square, excellent local food. First Sienese order: <strong>pici al cinghiale</strong> — thick hand-rolled pasta with wild boar ragù, the defining dish of this region. Cantucci biscuits with Vin Santo to finish: dip the almond biscuit into the sweet wine. This is the Tuscan ritual.</div>
+      <div class="etags"><span class="etag food">Pici al cinghiale · ribollita · bistecca · cantucci + Vin Santo</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 2 ══════════ -->
+<div class="day-section" id="s-d2">
+<div class="day-card th-florence">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">2</span></div>
+    <div class="day-info">
+      <h2>Florence — David, Ponte Vecchio &amp; Piazzale Michelangelo</h2>
+      <div class="dd">Friday, May 23 · Day trip from Siena · 1h 20min each way · back for dinner</div>
+      <div><span class="drive-pill">🚗 Siena → Florence · 1h 20min · SS2 or superstrada</span></div>
+    </div>
+    <div class="dtag">Florence</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">8:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Drive Siena → Florence — 1h 20min</div>
+      <div class="edesc">Take the Siena–Firenze superstrada (dual carriageway, no toll, fast). Park at Piazzale Michelangelo (large lot, ~€3/hr) before descending into the city. Do NOT drive into central Florence — ZTL cameras issue automatic fines to any non-resident vehicle in the historic centre. Walk or take a taxi from the parking area down to the Accademia.</div>
+      <div class="etags"><span class="etag drive">Park at Piazzale Michelangelo · never drive into centro · ZTL fines are automatic</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">10:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Piazzale Michelangelo — opening panorama</div>
+      <div class="edesc">If you parked here, start with the view before descending. The panoramic terrace above the city: the Duomo's dome, the Palazzo Vecchio tower, the Ponte Vecchio, the Arno. In morning light this is the finest city view in Italy. Take the group photo here — it's the one that goes on the wall at home. Walk down through the rose garden (free, in full May bloom) toward the river.</div>
+      <div class="etags"><span class="etag kids">The group photo that everyone actually uses — make it count</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">10:45am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Accademia Gallery — Michelangelo's David · 1.5hrs</div>
+      <div class="edesc">Pre-booked 10am or 11am entry. The David is 5.17 metres of single-block marble, carved when Michelangelo was 26. The scale in person is the first shock — photographs cannot convey it. The second shock is the subject: Michelangelo chose the moment of decision before David throws the stone, not the victory after. Every muscle is loaded with tension. The veins on the hands are individually carved. Stand in front of it for five minutes without your phone. The hall also holds the <em>Prisoners</em> — four unfinished figures half-emerging from their marble blocks, intentionally left incomplete. More haunting than anything finished.</div>
+      <div class="etags"><span class="etag book">~€12/adult · galleriaaccademia.it · pre-book essential</span><span class="etag kids">Tell Alex: Michelangelo was 26 when he finished this. Watch his reaction.</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">12:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Lunch — Mercato Centrale · 1hr</div>
+      <div class="edesc">5min walk from the Accademia. Ground floor: one of Italy's great food markets — meats, cheeses, fresh pasta, truffles. First floor: food hall with 30+ stalls. Perfect for 8 people with different appetites. Gio and Sophie: pasta and the gelato counter upstairs. Alex and Cyril: try the lampredotto (Florentine street food — offal sandwich, a genuine tradition, remarkable if they're adventurous). Adults: fresh pappardelle with truffle. Budget €12–16/person. No reservations, no queue, completely informal.</div>
+      <div class="etags"><span class="etag food">Best option for 8 people with different tastes · gelato counter on the upper floor is world-class</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">2:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Ponte Vecchio + Duomo complex + Ghiberti's Gates</div>
+      <div class="edesc">Walk to Ponte Vecchio — the medieval bridge lined with goldsmiths' shops, 700 years old. Cross it, look over the parapet at the Arno. Then the Duomo complex: Brunelleschi's dome (the largest brick dome ever built, the engineering of which Brunelleschi never fully explained and took to his grave), the Baptistery where Dante was baptised, and Ghiberti's <strong>Gates of Paradise</strong> — the east Baptistery doors so perfectly executed that Michelangelo named them. Queue 5min to stand close: ten gilded bronze panels, each a complete Biblical narrative with perfect perspective carved in relief. These doors took 27 years to complete.</div>
+      <div class="etags"><span class="etag history">Brunelleschi's dome: 1436 · still the largest masonry dome in the world · the technique was a secret</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">4:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">San Lorenzo leather market + gelato</div>
+      <div class="edesc">The outdoor leather market around San Lorenzo church: genuine Florentine craft leather — bags, wallets, jackets, belts. All negotiable (start at 70% of asking). Give Alex and Cyril a budget and let them negotiate independently — at 16 and 13 this is exactly the right autonomy. Then <strong>Gelateria dei Neri</strong> or <strong>Vivoli</strong> (Florence's oldest, 1930) for the mandatory gelato. Family vote on best flavour of the whole trip so far.</div>
+      <div class="etags"><span class="etag kids">Alex + Cyril negotiate their own leather purchase · life skill</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">5:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Drive back to Siena — 1h 20min</div>
+      <div class="edesc">Return via the Chiantigiana (SS222) if you want the scenic Chianti Classico wine route at golden hour — vineyard estates, cypress avenues, stone farmhouses. Or straight back on the superstrada. Either way, in Siena by 7pm for the final dinner before tomorrow's big drive south.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Final Siena dinner</div>
+      <div class="edesc">If you did La Taverna last night, try <strong>Osteria Le Logge</strong> — a beautiful 19th-century pharmacy converted into a restaurant, wooden cabinets, serious Sienese food. Or <strong>Il Carroccio</strong> for simpler, excellent value. This is the last evening in Tuscany. Order the bistecca Fiorentina if anyone didn't get it in Florence — this is the correct geography for it. Cantucci with Vin Santo again. Nobody refuses the second round.</div>
+      <div class="etags"><span class="etag food">Bistecca Fiorentina · pici · pecorino with truffle honey · cantucci + Vin Santo</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 3 ══════════ -->
+<div class="day-section" id="s-d3">
+<div class="day-card th-siena">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">3</span></div>
+    <div class="day-info">
+      <h2>Pienza morning → drive south → arrive Amalfi on the sea</h2>
+      <div class="dd">Saturday, May 24 · The split day · checkout early · leave Pienza by 1pm</div>
+      <div><span class="drive-pill">🚗 Siena → Pienza · 45min scenic</span><span class="drive-pill">🚗 Pienza → Amalfi · 3h 45min · A1 + A3 + SS163</span><span class="alert-pill">⚠ Leave Pienza 1pm hard</span></div>
+    </div>
+    <div class="dtag">Transfer</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">8:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Checkout Siena — load cars — be driving by 9am</div>
+      <div class="edesc">Bags packed the night before. Checkout by 8:30am. This is the one day where timing matters absolutely — a late start compounds all the way to a dark arrival in Amalfi with tired children and a narrow coastal road still to navigate. The rule is simple: driving out of Siena by 9am.</div>
+    </div></div>
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Drive Siena → Pienza via SP146 · 45min</div>
+      <div class="edesc">Take the SP146 south from San Quirico d'Orcia — this is the road on every Tuscany postcard. Cypress tree avenues, rolling gold and green hills, lone farmhouses on every ridge. Drive slowly. Stop once for the photograph. The <strong>Cappella di Vitaleta</strong> — a small Romanesque chapel in an open field approached by a double cypress avenue — is the single most iconic spot in Tuscany. GPS it directly: Cappella della Madonna di Vitaleta, near San Quirico d'Orcia. Five minutes stopped, photographed, continuing. Do not skip it.</div>
+      <div class="etags"><span class="etag">45min · stop at Cappella di Vitaleta · the Tuscany postcard moment</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">10:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Pienza — 2.5 hours · the perfect Renaissance town</div>
+      <div class="edesc">Pope Pius II demolished and completely rebuilt his birthplace in 1459 as an ideal Renaissance city — and finished it in three years. The result is the most perfectly proportioned small town in Italy. Walk Corso Rossellino to Piazza Pio II. The <strong>view from the garden behind the cathedral</strong>: a sudden drop 300m straight down the cliff to the Val d'Orcia floor, the landscape extending to Montalcino's ridge on the far side. This view is worth the detour. <strong>Buy here:</strong> Pecorino di Pienza in every form — fresh, aged, truffle-infused, wrapped in walnut leaves. Taste at the shops on the main street. Local honey. Handmade pasta. This is the best food shopping of the Tuscany section. Quick lunch at any trattoria on the main street.</div>
+      <div class="etags"><span class="etag food">Buy: Pecorino di Pienza · truffle honey · handmade pici · the best Tuscan food shopping</span></div>
+      <div class="warn-box"><strong>Hard departure: 1:00pm from Pienza.</strong> Amalfi is 3hrs 45min away on the fastest route. Leaving at 1pm means arriving by 5pm — time to check in, see the sea, and decompress. Every 30min you add here arrives as 30min of coastal road in the dark. Enjoy Pienza fully, then leave precisely on time.</div>
+    </div></div>
+    <div class="tb"><div class="tc">1:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Drive Pienza → Amalfi town · 3h 45min</div>
+      <div class="edesc">Head to the A1 autostrada via Bettolle junction, south the length of Italy past Rome's orbital, down the A3 past Vesuvius (visible from the motorway, enormous), exit at Castellammare di Stabia. Then the SS163 coastal road — the Amalfi Drive. This final 25km of the SS163 is the famous narrow coastal road. <strong>Drive it in daylight, arriving well before dark.</strong> Take it slowly. Two cars in convoy, keep distance. The views are extraordinary and the road is genuinely narrow in places. At Amalfi town: follow signs to Parking Luna Rossa — the large multi-storey garage at the town entrance. Park both cars. You will not move them again until Rome departure on Day 6.</div>
+      <div class="etags"><span class="etag drive">A1 + A3 + SS163 · all comfortable until the last 25km coastal section · take it steady</span><span class="etag warn">Drive SS163 in daylight · arriving after dark on this road with 8 people is avoidable and should be avoided</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">~5:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Arrive Amalfi — check in — first look at the sea</div>
+      <div class="edesc">Hotel porters collect luggage from the car park — this is standard in Amalfi, all the good hotels have it arranged. Walk to the hotel. Drop bags. Walk directly to the waterfront. The Bay of Salerno in the late afternoon light, the cliffs above, the Duomo steps rising behind you — this is the Amalfi Coast arriving all at once. Gio sees the sea. He will not want to do anything else for the next two days. That's correct.</div>
+      <div class="sea-box"><strong>Why Amalfi town works perfectly for this group:</strong> The beach (Spiaggia di Amalfi) is 2min from every good hotel. The town is flat along the waterfront. The ferry dock is 3min from the hotel — for tomorrow's Pompeii day trip and the Positano ferry on Day 6. The Duomo is a 3min walk. In the evening when day-trippers leave by 6pm, the town becomes genuinely Italian — locals at outdoor tables, the smell of limoncello and seafood, the cliffs lit warm by the last light.</div>
+    </div></div>
+    <div class="tb"><div class="tc">7:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">First evening stroll + limoncello</div>
+      <div class="edesc">Walk the harbour, climb the 62 steps to the <strong>Duomo di Amalfi</strong> exterior — the Arab-Norman cathedral facade is extraordinary in the evening light, completely different from anything in Tuscany or Rome. Buy limoncello from a proper local producer on the Via Lorenzo d'Amalfi — not the tourist shops near the port but the enotecas slightly further in. The Amalfi lemon is a protected variety, larger and more fragrant than any other. The limoncello made from it is a different drink from what you've had before.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — first seafood night</div>
+      <div class="edesc"><strong>Il Tari</strong> (excellent local seafood, right in the centre, reliable service), <strong>Ristorante La Caravella</strong> (one Michelin star, historical, the place for a special dinner — book ahead), or <strong>Trattoria Il Mulino</strong> for simpler, excellent local food. First coastal order: <strong>spaghetti alle vongole</strong> — clams, white wine, parsley, the defining dish of this coastline. Fresh grilled branzino. Fried calamari. The <strong>delizia al limone</strong> for dessert — a dome of sponge and lemon cream that is one of the most accurately named desserts in Italy.</div>
+      <div class="etags"><span class="etag food">Spaghetti alle vongole · branzino al sale · frittura di paranza · delizia al limone</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 4 ══════════ -->
+<div class="day-section" id="s-d4">
+<div class="day-card th-amalfi">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">4</span></div>
+    <div class="day-info">
+      <h2>Amalfi — beach, town, Duomo &amp; total relaxation</h2>
+      <div class="dd">Sunday, May 25 · No driving · No ferries · Nothing mandatory · This is the gift day</div>
+    </div>
+    <div class="dtag">Amalfi</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Late hotel breakfast on the terrace</div>
+      <div class="edesc">The hotel terrace with the bay below you. Fresh sfogliatella, local pastries, fruit, the best coffee of the trip. Nobody is in a hurry. This morning exists precisely to do nothing quickly. The sea is already there. Gio has already asked three times when they're going to the beach.</div>
+    </div></div>
+    <div class="tb"><div class="tc">10:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Spiaggia di Amalfi — the whole morning</div>
+      <div class="edesc">The Amalfi town beach is 2min from the hotel. Beach clubs (sunbeds + umbrella ~€25–30/set) or free sections on the sides and further along. The water is clear, the cliffs rise above, the town behind you. This is what the last 4 days of driving and history have been building toward. Gio goes straight into the water and does not come out until lunch. Sophie snorkels in the rocky edges — bring the mask from home. Alex and Cyril jump off the rocks. The adults order something cold and don't move for three hours. This is the correct use of a beach day on the Amalfi Coast.</div>
+      <div class="etags"><span class="etag kids">Bring snorkel gear from home — the rocky edges are excellent · crystal clear water</span><span class="etag">Beach clubs: ~€25/set · Free section available on the far side</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">1:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Lunch — on the waterfront</div>
+      <div class="edesc">The restaurants along the Amalfi harbour do excellent fresh seafood. <strong>Il Tari</strong> again for simplicity, or any of the harbour terraces. Today's lunch is about location: eating fresh pasta al pomodoro with the sea directly below you, the cliffs above, a glass of cold Falanghina (the local white wine) in your hand. Budget €20–28/person.</div>
+      <div class="etags"><span class="etag food">Pasta al pomodoro · mixed fried seafood · Falanghina bianco · tiramisù</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">3:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Duomo di Amalfi — the Arab-Norman cathedral</div>
+      <div class="edesc">Climb the 62 steps to the cathedral facade — striped black and white marble, Arab-Norman arches, Byzantine mosaics on the facade. This is the most historically layered building on the coast: Amalfi was a major maritime republic before Venice and Genoa, trading with the Arab world throughout the Middle Ages, and the architecture shows it. The <strong>Cloister of Paradise</strong> (Chiostro del Paradiso) inside: 13th-century Arabic columns, medieval sarcophagi of Amalfi nobles, a garden enclosed within the cloister walls. Genuinely extraordinary and rarely crowded. Budget 45min.</div>
+      <div class="etags"><span class="etag history">Amalfi was a major maritime republic 839–1073 AD · traded with Byzantines, Arabs, Normans simultaneously</span><span class="etag book">~€3 entry to Cloister of Paradise</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">4:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Valle dei Mulini — the lemon grove walk</div>
+      <div class="edesc">From behind the Duomo, a shaded path leads up through working lemon groves to a ruined medieval paper mill. The walk is 20min each way, easy, completely free, and one of the most pleasant things to do in Amalfi. Enormous lemons hang overhead, the valley is cool and green, and the paper mill ruins are genuinely interesting — Amalfi invented a particular type of paper still used for important documents today. Gio picks a lemon off a low-hanging branch. This is allowed and expected.</div>
+      <div class="etags"><span class="etag kids">Easy shaded walk · through actual lemon groves · Gio picks a lemon · completely free</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">6:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Ceramic shopping + evening passeggiata</div>
+      <div class="edesc">Amalfi coast ceramics — hand-painted in the local style (bright blue, yellow, and white, lemons and sea patterns) — are genuinely excellent here. Buy from established workshops, not port stalls. <strong>Ceramiche Artistiche</strong> on Via Lorenzo d'Amalfi or any studio with artists working visibly inside. Then the evening passeggiata along the harbour: the Italian ritual of walking slowly with no destination, watching the fishing boats come in, the cliffs going pink and orange above.</div>
+      <div class="etags"><span class="etag food">Granita di limone at a harbour bar: the best thing to drink at this hour in this place</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — second Amalfi night</div>
+      <div class="edesc">If budget allows: <strong>Ristorante La Caravella</strong> tonight — one Michelin star, opened 1959, inside a former boat storage cave, the most serious restaurant on the coast. Historic, beautiful, and genuinely excellent. Book well ahead. Otherwise: <strong>Ristorante Eolo</strong> for a terrace dinner above the sea. Tonight: the whole grilled orata (gilt-head bream), the linguine all'astice (lobster pasta), the sea urchin if the season allows. Order one of everything and share it all.</div>
+      <div class="etags"><span class="etag food">La Caravella: the special dinner · book ahead · Michelin starred since 1966</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 5 ══════════ -->
+<div class="day-section" id="s-d5">
+<div class="day-card th-pompei">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">5</span></div>
+    <div class="day-info">
+      <h2>Pompeii — ferry + train day trip from Amalfi</h2>
+      <div class="dd">Monday, May 26 · Morning ruins · afternoon back at the beach · no cars</div>
+      <div><span class="ferry-pill">⛴ Amalfi → Salerno · 35min ferry</span><span class="drive-pill">🚆 Salerno → Pompeii Scavi · 25min train</span></div>
+    </div>
+    <div class="dtag">Pompeii</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">7:15am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Walk to Amalfi port — ferry to Salerno</div>
+      <div class="edesc">Quick bar breakfast at the port (cornetti, cappuccino — 10 minutes). Board the 7:30am ferry from Amalfi to Salerno. Journey: 35min, calm sea, beautiful morning light on the cliffs. Salerno is a proper southern Italian city — not a tourist destination, just a city, and the ferry arrives at a working port. Walk 10min to Salerno Centrale train station, or take a taxi (€5).</div>
+      <div class="etags"><span class="etag ferry">Ferry ~€8/person · 35min · departs Amalfi port · check current timetables at traghettiamalfi.it</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">8:15am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Train Salerno → Pompeii Scavi · 25min</div>
+      <div class="edesc">Trenitalia regional train from Salerno Centrale to Pompei (Scavi - Villa dei Misteri) station. ~€3/person. Trains run every 30min. The station drops you directly at the main entrance — no walking, no searching. Pick up your pre-booked tickets at the machine or gate.</div>
+      <div class="etags"><span class="etag book">Pompeii tickets: pompeiisites.org · 9am entry · ~€18/adult · free under 18 · book in advance</span><span class="etag">Download Pompeii Sites app before leaving hotel · best free audio guide available</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Pompeii Archaeological Park — 3.5 hours</div>
+      <div class="edesc">Pompeii is not ruins. It is an entire Roman city — 44 hectares — preserved under volcanic ash since 79 AD. You walk the actual streets, enter houses with frescoes still on the walls, visit bakeries with bread moulds still in the ovens, shops with price lists still painted above the counters. The completeness is what shocks every first-time visitor. <strong>The route:</strong> Porta Marina entrance → the Forum (start here; Vesuvius is visible at the end of the Forum axis, which Pompeii's urban planners placed deliberately) → Via dell'Abbondanza (the main commercial street, stepping stones still in place between raised pavements) → House of the Faun (the largest private home, the Alexander mosaic) → the Lupanar (the brothel, historically fascinating — the erotic frescoes served as a picture menu for non-Latin-speaking clients from across the Mediterranean) → the Amphitheatre (intact, enormous, the oldest surviving Roman amphitheatre in the world) → Villa dei Misteri (outside the main walls via Porta Ercolano — 10min walk — do NOT skip: the Dionysian frescoes in deep Pompeian red are the finest surviving ancient paintings anywhere).</div>
+      <div class="etags"><span class="etag history">Destroyed 24 August 79 AD · rediscovered 1748 · only 2/3 excavated · digs still active and finding new rooms</span><span class="etag kids">Alex 16: this is the single best thing on the entire 10-day trip. Guaranteed.</span></div>
+      <div class="history-box"><strong>Garden of the Fugitives — prepare the group:</strong> 13 plaster casts of people who died fleeing — preserved in their exact final positions. A family huddled together. A man covering his face. The casts are made by injecting plaster into the hollow spaces the bodies left in the ash. Sobering and profound, not frightening. Sophie (11) and the teenagers: absolutely yes. Gio (6): preview it and decide — most 6-year-olds handle it well when framed as history rather than horror.</div>
+    </div></div>
+    <div class="tb"><div class="tc">12:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Lunch at Pompeii exit + return journey</div>
+      <div class="edesc">Simple restaurants just outside the Porta Marina exit — eat quickly, it's hot and everyone needs shade. Train back to Salerno (25min), then ferry Salerno to Amalfi (35min). Back in Amalfi by 3pm. The afternoon is entirely free.</div>
+      <div class="etags"><span class="etag ferry">Return: train Pompeii → Salerno · ferry Salerno → Amalfi · total ~1hr 15min</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">3:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Back in Amalfi — beach afternoon recovery</div>
+      <div class="edesc">Pompeii is emotionally and physically intense — the heat, the scale, the history. The beach is the perfect decompression. Gio goes straight to the water. The adults sit in the shade and order cold drinks. Nobody talks about anything serious for at least two hours. This is the intended rhythm: intense morning, gentle afternoon.</div>
+    </div></div>
+    <div class="tb"><div class="tc">7:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Sunset from the harbour wall</div>
+      <div class="edesc">Sit on the harbour wall as the day tourists clear out and Amalfi becomes itself again. The cliffs go amber and rose in the late light. The fishing boats are back. Order a granita di limone or a glass of cold white wine. Let the day settle. The conversation will be entirely about Pompeii — let it run.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Final Amalfi dinner</div>
+      <div class="edesc">Last dinner on the coast. Return to the best meal of the last two nights, or try <strong>Trattoria Il Mulino</strong> for honest, simple local cooking at excellent value. Order everything left on the list. The delizia al limone again — nobody refused it the first time. After dinner: a final walk along the harbour in the dark. The cliffs illuminated, the sea black, the Duomo lit above the steps. Amalfi at midnight is one of the most beautiful things in Italy.</div>
+      <div class="etags"><span class="etag food">Last coastal dinner · order the whole grilled fish · order the limone dessert again · no regrets</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 6 ══════════ -->
+<div class="day-section" id="s-d6">
+<div class="day-card th-amalfi">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">6</span></div>
+    <div class="day-info">
+      <h2>Positano morning ferry → Naples pizza → Rome</h2>
+      <div class="dd">Tuesday, May 27 · Morning coast · afternoon drive · arrive Rome by evening</div>
+      <div><span class="ferry-pill">⛴ Amalfi → Positano · 20min</span><span class="drive-pill">🚗 Amalfi → Naples → Rome · 3hrs</span></div>
+    </div>
+    <div class="dtag">Transfer</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Ferry Amalfi → Positano · 20min</div>
+      <div class="edesc">Morning ferry from Amalfi port heading west. 20 minutes across the coast — watching the villages from the water is how the Amalfi Coast was always meant to be seen, not from the narrow road above. The approach to Positano from the sea is the most dramatic arrival on the entire coast: the cascade of terracotta and white buildings tumbling down the cliff face, the beach at the base, the mountains above. Everyone crowds the railing. Buy a return ticket (you don't need it — you're driving back — but it's the same cost as single).</div>
+      <div class="etags"><span class="etag ferry">Ferry ~€8/person · 20min · Amalfi port · check timetables at traghettiamalfi.it</span><span class="etag kids">Gio on a ferry on the Mediterranean at breakfast time: pure happiness</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">9:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Positano — 2hrs · beach, town &amp; handmade sandals</div>
+      <div class="edesc">Walk down from the landing stage to Spiaggia Grande. The beach is more glamorous than Amalfi — sunbeds €30–40/set, free section on the sides. Swim in the clearest water of the trip. The town climbing above: extraordinary boutiques, linen clothes in the Positano palette (white, sea-blue, coral), and the famous handmade sandals. <strong>The sandal workshop:</strong> local artisans have been making sandals to measure since the 1950s — trace your foot, choose leather, ready in 30–45min, €50–80. Every adult should get a pair. The quality is genuine and the tradition is real. Alex and Cyril will want them too. Gio picks his own colour.</div>
+      <div class="etags"><span class="etag kids">Handmade Positano sandals: the one purchase everyone is still wearing in 5 years</span><span class="etag food">Coffee and sfogliatella on the beach before the ferry back</span></div>
+      <div class="sea-box"><strong>Positano logistics:</strong> No cars, no steps problem — you arrive and leave by ferry. All the logistical complexity of staying in Positano doesn't exist when you're just visiting for a morning. You get the best of it: the view arriving by sea, the beach, the shopping, the glamour — then you leave before the afternoon crowds and heat peak. This is the correct way to do Positano.</div>
+    </div></div>
+    <div class="tb"><div class="tc">12:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Ferry Positano → Amalfi · 20min · collect cars · depart</div>
+      <div class="edesc">Ferry back to Amalfi. Walk to Parking Luna Rossa, collect both cars. Drive out of Amalfi on the SS163 heading east toward Salerno — this section of the coastal road (heading east, away from Positano) is significantly less congested than the western section, especially at midday. Join the A3 autostrada at Salerno.</div>
+    </div></div>
+    <div class="tb"><div class="tc">1:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Naples — mandatory pizza stop · 1.5hrs</div>
+      <div class="edesc"><strong>This is non-negotiable.</strong> You are driving through the birthplace of pizza. Not stopping is not an option. Park near the centro. Walk to <strong>Pizzeria Da Michele</strong> — open since 1870, two options only: Margherita or Marinara, cash only, queue outside, the greatest pizza on earth. <strong>Sorbillo</strong> if Da Michele's queue is too long. Neapolitan pizza is a different food from anything else called pizza: the wet centre, the char on the leopard-spotted crust, the buffalo mozzarella slipping to the edges. Even the most sceptical eater converts immediately. Budget 1.5hrs total including parking.</div>
+      <div class="etags"><span class="etag food">Da Michele: cash only · Margherita or Marinara only · no menu · queue outside · worth every minute</span><span class="etag kids">Gio will eat two slices and ask for a third. Let him.</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">3:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Drive Naples → Rome · 2hrs · A1 north</div>
+      <div class="edesc">A1 autostrada north, entirely motorway, entirely comfortable. Pass Monte Cassino (WWII allied cemetery visible on the hilltop — significant and visible from the road, a 10min detour if anyone wants it). Approach Rome on the GRA ring road. <strong>Return rental cars</strong> at the depot near Roma Termini or Prati — do this before going anywhere near the city centre. Do not drive into historic Rome under any circumstances.</div>
+      <div class="etags"><span class="etag drive">A1 north · 2hrs · return cars at Termini/Prati depot on arrival · no driving in Rome from this point</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">~6:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Check in — Prati apartments</div>
+      <div class="edesc">Two adjacent units near the Vatican. Drop bags. The next three days are Rome. You have arrived in the city that the whole trip has been building toward — you've seen the Etruscans who came before (in Siena's history), the medieval Italy that Rome's fall created (Siena's contrade), the Renaissance it catalysed (Florence), and a frozen Roman city (Pompeii). Now you're in Rome itself. The context is complete.</div>
+    </div></div>
+    <div class="tb"><div class="tc">7:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">First Rome evening — Piazza Navona</div>
+      <div class="edesc">Walk or taxi to Piazza Navona. Bernini's Fontana dei Quattro Fiumi at the centre — four enormous river gods, theatrical and baroque. Gio runs the perimeter. Walk to Campo de' Fiori. One glass of something at an outdoor table. Let Rome arrive without rushing it.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — Trastevere</div>
+      <div class="edesc"><strong>Da Enzo al 29</strong> or <strong>Tonnarello</strong> — book ahead, outdoor tables, the full Roman experience. First Roman dinner: supplì (fried rice balls, mozzarella stretching like a telephone wire when pulled apart), cacio e pepe, carbonara. After dinner: gelato from <strong>Fatamorgana</strong> — Rome's most creative gelateria. The first coin of the Roman gelato chapter.</div>
+      <div class="etags"><span class="etag food">Supplì · cacio e pepe · carbonara · tiramisù · all Roman originals · all invented in this city</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 7 ══════════ -->
+<div class="day-section" id="s-d7">
+<div class="day-card th-rome">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">7</span></div>
+    <div class="day-info">
+      <h2>Rome I — Colosseum, Forum, Palatine &amp; Trevi</h2>
+      <div class="dd">Wednesday, May 28 · The Roman Empire in one day</div>
+    </div>
+    <div class="dtag">Rome</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">7:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Bar breakfast + Metro Line B → Colosseo</div>
+      <div class="edesc">Cornetto + cappuccino at the nearest bar — standing up, 10 minutes. Bomboloni for Gio. Metro Line B to Colosseo stop. 2min walk to the entrance. Arrive at your pre-booked 9am slot 15 minutes early. Audio guides at the gate (€5 each — worth it for ages 10+).</div>
+      <div class="etags"><span class="etag book">9am entry · coopculture.it · Full Experience with underground ~€22/adult</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Colosseum — 2 hours</div>
+      <div class="edesc">You arrive at the Colosseum having already walked a complete Roman city at Pompeii. The context is different from any other visitor here — you know what a Roman forum looks like, what Roman streets feel like, how Roman houses were organised. The Colosseum is the entertainment machine that city funded. The <strong>Full Experience underground</strong> is the upgrade worth taking: the corridors where gladiators and animals waited before being hoisted through trapdoors into the arena above. Standing in those passages knowing 50,000 people were screaming overhead is one of the most viscerally affecting moments of the whole trip. Alex and Cyril's Pompeii knowledge transforms their experience of this building.</div>
+      <div class="etags"><span class="etag history">Built 72–80 AD · inaugurated the year after Pompeii's destruction · same empire, same moment</span><span class="etag kids">Underground: the one upgrade worth paying for · genuinely dramatic</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">11:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Roman Forum + Palatine Hill · 1.5hrs</div>
+      <div class="edesc">Included in the same ticket. Walk where Julius Caesar was cremated (flowers left by visitors every day). The Arch of Titus, the Temple of Saturn, the Rostra. Then up to Palatine Hill — pine-shaded, with sweeping views back over the Forum. The emperors' palaces were here. Grass and shade where Gio can rest. The view from Palatine looking across the Forum to the Colosseum — understanding the geography of Rome for the first time — arrives without warning.</div>
+      <div class="etags"><span class="etag kids">Palatine Hill: shaded grass · Gio's official rest stop · let him run between the ruins</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">12:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Lunch — Testaccio market</div>
+      <div class="edesc">15min walk. Rome's best indoor food market. Supplì, pizza bianca, carciofi fritti — each stall does one thing brilliantly. Budget €12–15/person, shared tables inside. This is where Romans actually eat lunch.</div>
+      <div class="etags"><span class="etag food">Supplì al telefono · pizza bianca · carciofi fritti · the best Roman street food</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">2:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Aventine Hill — Knights of Malta Keyhole</div>
+      <div class="edesc">15min walk uphill. At no. 3 Piazza dei Cavalieri di Malta: look through the keyhole of a large green door. Through a perfectly pruned tunnel of hedges, St. Peter's dome is framed in the distance — sharp, centred, impossibly precise. One of Rome's greatest free secrets. Queue 5–10min. Everyone goes quiet. This is the photograph nobody expects and everyone keeps.</div>
+      <div class="etags"><span class="etag">Free · one of Rome's best secrets · even teenagers go quiet</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">4:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Circus Maximus + rest</div>
+      <div class="edesc">Down from Aventine to the site of the ancient world's largest chariot racing track — 250,000 spectators, nothing above ground now, but the scale of the valley makes sense when you know. Free. Gio runs laps. Then taxi back to Prati for 90min rest. You've walked 12km on Roman basalt. Tomorrow is the Vatican — everyone needs to be fresh.</div>
+    </div></div>
+    <div class="tb"><div class="tc">7:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Trevi Fountain — late afternoon</div>
+      <div class="edesc">Taxi or Metro + walk. Late afternoon crowds are manageable. Pay €2 for the lower terrace. <strong>The group coin throw:</strong> everyone simultaneously, left hand over right shoulder, eyes closed, count of three. It's a ritual, not a tourist cliché — make it one. Gelato immediately after.</div>
+      <div class="etags"><span class="etag kids">Synchronized family coin throw · count down from three · all 8 at once</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — Centro Storico</div>
+      <div class="edesc"><strong>Armando al Pantheon</strong> if booked ahead (legendary, walk past the Pantheon illuminated at night on the way — extraordinary). Otherwise walk the side streets off Piazza Navona and find a terrace you love. Full Roman meal — two courses minimum, wine, dessert, no hurry.</div>
+      <div class="etags"><span class="etag food">Full Roman dinner · nobody leaves before 10:30pm · the pace is deliberate</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 8 ══════════ -->
+<div class="day-section" id="s-d8">
+<div class="day-card th-rome">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">8</span></div>
+    <div class="day-info">
+      <h2>Rome II — Vatican, St Peter's, Castel Sant'Angelo &amp; Pantheon</h2>
+      <div class="dd">Thursday, May 29 · Sacred Rome · 2,000 years of continuous power</div>
+    </div>
+    <div class="dtag">Rome</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">7:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Early breakfast + Vatican Museums — 8am entry</div>
+      <div class="edesc">Arrive Vatican Museums by 8am for pre-booked entry. Being inside before 8:15am — especially on a Thursday in late May — changes the experience entirely.</div>
+      <div class="etags"><span class="etag book">8am entry · museivaticani.va · ~€20/adult · pre-book essential</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">8:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Vatican Museums + Sistine Chapel · 2.5hrs</div>
+      <div class="edesc">Go straight to the Sistine Chapel first — walk against the flow following exit signs. At 8:15am it is genuinely quiet. Stand in the centre and look up. Michelangelo painted almost all of it alone over 4 years (1508–1512). He was 33 when he started. The Creation of Adam is directly above the altar end — find it first, then let your eyes move outward. Then walk back through the Gallery of Maps (the entire Italian peninsula painted on the ceiling in 1580 — stunning and kids find it fascinating) and Raphael's School of Athens. The School of Athens: painted flat but creates a perfect 3D architectural space. Tell the group this is the technique that gave rise to perspective painting in the Renaissance and that cinema uses it today for set extensions. Three rooms done properly beats fifteen rushed.</div>
+      <div class="etags"><span class="etag tip">No photos in Sistine Chapel — agree as a family rule before entering the building</span><span class="etag kids">Sistine Chapel: "Find God touching Adam's finger" — gives everyone a specific mission</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">10:45am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">St Peter's Basilica + Cupola · 1.5hrs</div>
+      <div class="edesc">Free entry. Stand inside the entrance for 30 seconds before moving anywhere — let the scale arrive. The largest church in the world. Michelangelo's Pietà near the entrance: carved at 24, technically impossible at that scale, still astonishing. <strong>Cupola climb:</strong> 551 steps or elevator halfway. The view from the top over Rome, over the Vatican gardens, over the entire city in morning light. Alex and Cyril: absolutely. Sophie: yes. Gio: parent's call on the day based on energy. The view rewards every step.</div>
+      <div class="etags"><span class="etag">Basilica: free · Cupola: €8 stairs / €10 elevator + stairs</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">12:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Lunch — Prati</div>
+      <div class="edesc">Walk back into Prati. Pizza al taglio from any forno on Via Cola di Rienzo — buy by weight, eat standing. Completely Roman. Budget €8–10/person. Or sit at a trattoria on Via Candia for a proper lunch before the afternoon.</div>
+    </div></div>
+    <div class="tb"><div class="tc">2:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Castel Sant'Angelo · 1hr</div>
+      <div class="edesc">Walk across the angel bridge. Originally Hadrian's mausoleum (135 AD), later a papal fortress — the Pope escaped here via a covered elevated corridor from the Vatican during the 1527 Sack of Rome. The spiral ramp at the centre passes through every century of its history as you climb. Kids love the battlements and cannons. The rooftop: the best 360° view in central Rome — Tiber, St. Peter's, the whole city laid out below you.</div>
+      <div class="etags"><span class="etag book">~€15/adult · free under 18</span><span class="etag history">Used as a fortress for 1,700 years · the papal escape corridor is still intact inside the walls</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">3:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">The Pantheon</div>
+      <div class="edesc">20min walk. 125 AD, in continuous use since — converted to a church in 609 AD. The dome's diameter equals its height: 43.3 metres. The oculus — a 9-metre circular hole, the only light source — creates a slowly moving light column on May afternoons. Raphael is buried here. €5. Spend 20 minutes standing and looking up without moving. This is one of the genuinely unrepeatable spatial experiences in architecture.</div>
+      <div class="etags"><span class="etag book">€5/adult · afternoon light through the oculus is exceptional</span><span class="etag history">Largest unreinforced concrete dome in the world · the Romans' formula was lost for 1,300 years</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">5:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Spanish Steps + teenage freedom</div>
+      <div class="edesc">15min walk. In May: azalea flowers lining every step. Walk up, look down Via Condotti. Let Alex and Cyril have 45min independently in this area — give them a small cash budget and agree a meeting point and time. Rome is very safe. At 16 and 13 this is exactly the right kind of independence. The younger kids and adults: coffee and people-watching at a nearby bar.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Dinner — Trastevere</div>
+      <div class="edesc">Cross the Tiber to Trastevere for the second and final time. <strong>Grazia e Graziella</strong> for the best cacio e pepe in the neighbourhood, or <strong>Ristorante Paris</strong> for Roman-Jewish cuisine — artichokes alla Giudia, baccalà, carciofi. Order the artichokes. Order the abbacchio. Order the torta di ricotta e visciole. Last chance for Roman-Jewish food in its home city.</div>
+      <div class="etags"><span class="etag food">Carciofi alla Giudia · abbacchio · cacio e pepe · torta di ricotta e visciole</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 9 ══════════ -->
+<div class="day-section" id="s-d9">
+<div class="day-card th-rome">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">9</span></div>
+    <div class="day-info">
+      <h2>Rome III — Borghese, free city &amp; the last dinner</h2>
+      <div class="dd">Friday, May 30 · The breathing day · less monuments · more Rome · pack tonight</div>
+    </div>
+    <div class="dtag">Rome</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Villa Borghese — morning for the kids</div>
+      <div class="edesc">Rome's most beautiful park — 80 hectares of shaded paths, fountains, and open lawns. Paddleboats on the lake (Gio's specific request), bike rentals or electric family cars at the entrance (€10–20/hr), a puppet theatre. After 8 days of structured sightseeing this morning is deliberately unscheduled. Nobody needs a monument right now. Gio needs a boat. Give him a boat.</div>
+      <div class="etags"><span class="etag kids">Paddleboats · bike rental · puppet theatre · rose garden in full May bloom · all free or cheap</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">10:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Borghese Gallery — adults + Alex + Cyril (split)</div>
+      <div class="edesc">One of the greatest small museums in the world — Bernini and Caravaggio in overwhelming concentration, only 360 visitors per slot. <strong>Split: </strong>adults + Alex + Cyril go in. The other parent stays in the park with Gio and Sophie — genuinely the better morning for them. Inside: Bernini's Apollo and Daphne (Daphne turning into a laurel tree mid-movement, marble), his Pluto and Persephone (fingers pressing into thigh — the marble yields like flesh), Caravaggio's David with Goliath's severed head. 2hrs. The most concentrated hour-per-hour quality of any museum on this trip.</div>
+      <div class="etags"><span class="etag book">Must pre-book · tosc.it · ~€15 + €2 fee · 360 visitors per slot · no walk-ins ever</span><span class="etag">Best for ages 13+ · younger children better in the gardens</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">12:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Picnic in Villa Borghese</div>
+      <div class="edesc">Buy provisions from Prati delis the morning before: prosciutto, fresh mozzarella, bread, local olives, fruit, a bottle of local wine. Eat on the grass under the shade trees. Kids run between bites. Adults have wine. Nobody is performing anything for anyone. This is the most Roman thing possible and costs almost nothing.</div>
+    </div></div>
+    <div class="tb"><div class="tc">3:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Free afternoon — last Rome wander</div>
+      <div class="edesc">Everyone does what they want. Alex and Cyril: independent hour, meet at Trevi at 5pm. Sophie: wherever her favourite Roman street is. Gio: the Piazza della Repubblica carousel is exactly his speed. Adults: the Capuchin Crypt on Via Veneto (a church whose chapels are decorated with the bones of 3,700 monks in elaborate patterns — genuinely fascinating, philosophical rather than macabre, €9, 30min — Alex and Cyril: yes. Sophie: parent's call. Gio: no). Or simply sit at an outdoor table, order something cold, and watch Rome go by.</div>
+      <div class="etags"><span class="etag warn">Pack bags tonight — flight tomorrow · morning must be calm · do not leave packing for the morning</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">7:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">The Pantheon at dusk — one last time</div>
+      <div class="edesc">Walk to the Pantheon as the light changes. The oculus at dusk turns the interior golden. Sit on the steps outside with a coffee from the cafe opposite. Look at the building. 1,900 years old, still standing, still in use, still magnificent. This is the right place to let the 10 days settle.</div>
+    </div></div>
+    <div class="tb"><div class="tc">8:30pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">The last dinner — the one that matters most</div>
+      <div class="edesc">Book something worthy of the last night. <strong>Il Convivio Troiani</strong> near Piazza Navona (one Michelin star, extraordinary Roman creative cuisine — book well ahead for 8). Or <strong>Settimio all'Arancio</strong> (historic, reliable, excellent). The ritual: each person names their single favourite moment of the 10 days. Some say Pompeii. Some say the Amalfi ferry to Positano. Someone says the moment of silence in the Sistine Chapel. Gio says the paddleboat. One person says something nobody expected. Order everything on the table. Nobody leaves before 11pm. This is what the trip will be remembered through.</div>
+      <div class="etags"><span class="etag food">Order everything · stay until they close · let Gio pick the dessert · the farewell ritual</span></div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ DAY 10 ══════════ -->
+<div class="day-section" id="s-d10">
+<div class="day-card th-travel">
+  <div class="day-head">
+    <div class="day-num"><span style="font-size:9px;text-transform:uppercase">Day</span><span class="n">10</span></div>
+    <div class="day-info">
+      <h2>Last Roman morning → fly home from FCO</h2>
+      <div class="dd">Saturday, May 31 · Last espresso · airport · Dubai</div>
+    </div>
+    <div class="dtag">Travel</div>
+  </div>
+  <div class="schedule">
+    <div class="tb"><div class="tc">7:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Last bar breakfast</div>
+      <div class="edesc">Bags already packed from last night. Walk to the bar you've been using all week. Stand at the counter. Espresso, cornetto, 10 minutes. Gio gets his last bombolone. The barista probably knows the order by now. Do it properly one last time.</div>
+    </div></div>
+    <div class="tb"><div class="tc">9:00am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Last walk — wherever you haven't been</div>
+      <div class="edesc">2hrs of free time. Cross Ponte Sisto to Trastevere one more time. Walk along the Tiber. Find one last church to walk into — in Rome they're all significant and almost all free. Buy the last things at the Prati delis. Sit on a bench somewhere and do nothing. The city rewards one last unscheduled morning.</div>
+    </div></div>
+    <div class="tb"><div class="tc">11:30am</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Collect bags + checkout</div>
+      <div class="edesc">All 8 people, all luggage, outside by 11:45am. Pre-booked 8-seat minivan waiting.</div>
+    </div></div>
+    <div class="tb"><div class="tc">12:00pm</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Transfer to Rome Fiumicino (FCO) — pre-booked van</div>
+      <div class="edesc">8-seat minivan from Prati to FCO, ~45min, ~€120 flat rate. International check-in requires 2.5hrs minimum before departure. Arrive at FCO by 12:45–1pm for any afternoon flight. <strong>Do not take the Leonardo Express with 8 people and 10 days of luggage</strong> — the van is the only sensible option for this group size.</div>
+      <div class="etags"><span class="etag warn">Book the van the day before · never count on finding a taxi for 8 people at noon · confirm the night before</span></div>
+    </div></div>
+    <div class="tb"><div class="tc">FCO</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Fiumicino — check in · duty free · last espresso</div>
+      <div class="edesc">Terminal 3 for Emirates. Buy last gifts: Brunello di Montalcino (small bottles), Pecorino vacuum-packed, limoncello in ceramic bottles, amaretti, Chianti. One final espresso at the gate. The flight home is when everyone stops moving and the trip becomes a story. Let it.</div>
+    </div></div>
+    <div class="tb"><div class="tc">Departure</div><div class="ec"><div class="edot"></div>
+      <div class="etitle">Fly FCO → DXB</div>
+      <div class="edesc">The kids sleep. The adults sit with wine and quietly agree: Italy was exactly the right call. They were always going to agree. The agreement started the moment the plane touched down in Bologna 10 days ago.</div>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════ LOGISTICS ══════════ -->
+<div class="day-section" id="s-logistics">
+  <div class="section-label">Logistics &amp; practical details</div>
+  <div class="section-sub">Everything to book, pack, and know before you go</div>
+  <div class="logi-grid" style="grid-template-columns:1fr;">
+    <div class="logi-card">
+      <h3>Complete booking checklist</h3>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Flights:</strong> DXB → BLQ open-jaw FCO → DXB. Must land Bologna by 11am May 22. Confirm arrival time before booking everything else.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Amalfi hotel (2 nights, May 24–27):</strong> Hotel Santa Caterina (best), Hotel Miramalfi (excellent value), Hotel Marina Riviera (seafront). Book immediately — Amalfi in May fills months ahead.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Siena hotel (1 night, May 22–23):</strong> Grand Hotel Continental or Palazzo Ravizza. Inside the walls.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Rome apartments (3 nights, May 27–31):</strong> 2 adjacent units, Prati. Airbnb or Booking.com.</div></div>
+      <div class="li"><span class="ic">🔴</span><div class="tx"><strong>TODAY — Car rental:</strong> BLQ pickup May 22, Rome return May 27. 1× 7-seat minivan + 1× large sedan. Book now.</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>This week — Accademia (David):</strong> galleriaaccademia.it · May 23 · 10am · ~€12/adult</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>This week — Pompeii:</strong> pompeiisites.org · May 26 · 9am · ~€18/adult · free under 18</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>This week — Colosseum Full Experience:</strong> coopculture.it · May 28 · 9am · ~€22/adult</div></div>
+      <div class="li"><span class="ic">🟠</span><div class="tx"><strong>This week — Vatican Museums:</strong> museivaticani.va · May 29 · 8am · ~€20/adult</div></div>
+      <div class="li"><span class="ic">🟡</span><div class="tx"><strong>Borghese Gallery:</strong> tosc.it · May 30 · ~€15 + €2 booking fee · 360 visitors per slot · book now</div></div>
+      <div class="li"><span class="ic">🟡</span><div class="tx"><strong>La Caravella restaurant, Amalfi:</strong> Book for May 25 dinner · Michelin starred · book well ahead for 8</div></div>
+      <div class="li"><span class="ic">🟡</span><div class="tx"><strong>FCO airport transfer van:</strong> Pre-book 8-seat van May 31 morning · ~€120 · book the day before</div></div>
+      <div class="li"><span class="ic">🟢</span><div class="tx"><strong>La Taverna di San Giuseppe, Siena:</strong> Book for May 22 dinner · underground cave room</div></div>
+      <div class="li"><span class="ic">🟢</span><div class="tx"><strong>Castel Sant'Angelo:</strong> Book online · ~€15/adult · free under 18</div></div>
+      <div class="li"><span class="ic">🟢</span><div class="tx"><strong>Amalfi ferry timetables:</strong> Check traghettiamalfi.it for current May timetables before travel</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Amalfi logistics in detail</h3>
+      <div class="li"><span class="ic">🅿️</span><div class="tx"><strong>Parking:</strong> Parking Luna Rossa at the Amalfi town entrance. Large multi-storey, safe, ~€25/day. Leave both cars here for 2 nights. Walk everywhere in Amalfi. Cars don't move again until Rome departure.</div></div>
+      <div class="li"><span class="ic">⛴</span><div class="tx"><strong>Pompeii route (Day 5):</strong> Amalfi ferry → Salerno (35min, ~€8) · Train Salerno → Pompeii Scavi (25min, ~€3) · Total each way: ~1hr 15min. No car, no parking, no stress.</div></div>
+      <div class="li"><span class="ic">⛴</span><div class="tx"><strong>Positano visit (Day 6 morning):</strong> Ferry Amalfi → Positano (20min, ~€8). Return by ferry to collect cars and depart for Rome.</div></div>
+      <div class="li"><span class="ic">🛣️</span><div class="tx"><strong>Amalfi departure (Day 6 afternoon):</strong> SS163 east to Salerno (less busy direction), then A3 south and A1 north to Rome. ~3hrs total including Naples pizza stop.</div></div>
+      <div class="li"><span class="ic">💡</span><div class="tx">By leaving the cars in Amalfi for 2 nights and using ferries + trains, you eliminate all the stress of the coastal road. You drive it once to arrive, park, and don't touch it again.</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Budget rough guide — 8 people, 10 days</h3>
+      <div class="li"><span class="ic">✈</span><div class="tx"><strong>Flights (open-jaw DXB→BLQ / FCO→DXB, 8 pax):</strong> AED 22,000–35,000</div></div>
+      <div class="li"><span class="ic">🏨</span><div class="tx"><strong>Accommodation (9 nights):</strong> Siena 1nt ~€350–500 · Amalfi 2nts ~€1,000–2,000 · Rome 3nts ~€900–1,400. Total ~€2,250–3,900</div></div>
+      <div class="li"><span class="ic">🚗</span><div class="tx"><strong>Cars (6 driving days, 2 vehicles):</strong> ~€500–750 + fuel ~€150</div></div>
+      <div class="li"><span class="ic">🎟</span><div class="tx"><strong>Entry tickets + ferries (8 pax):</strong> ~€500–650 (David, Pompeii, Colosseum, Vatican, Castel Sant'Angelo, Borghese, Pantheon, Amalfi ferries)</div></div>
+      <div class="li"><span class="ic">🍽</span><div class="tx"><strong>Food (10 days, 8 pax):</strong> ~€160–220/day = €1,600–2,200. Amalfi is the most expensive dining section.</div></div>
+      <div class="li"><span class="ic">💰</span><div class="tx"><strong>Total rough range both families:</strong> AED 85,000–130,000 depending on hotel choice and dining level</div></div>
+    </div>
+    <div class="logi-card">
+      <h3>Pack list essentials</h3>
+      <div class="li"><span class="ic">👟</span><div class="tx"><strong>Walking shoes — mandatory for all 8.</strong> Siena and Rome's basalt cobblestones destroy sandals and feet. Good support is non-negotiable for every adult and child.</div></div>
+      <div class="li"><span class="ic">👗</span><div class="tx"><strong>Vatican dress code:</strong> Covered shoulders + knees for entry. Pack a light scarf or cardigan per person. They turn you away at the door without exception.</div></div>
+      <div class="li"><span class="ic">🩱</span><div class="tx"><strong>Swimwear from Day 3:</strong> Amalfi beach Days 4 + 5, Positano Day 6. Pack into carry-on so it's accessible immediately.</div></div>
+      <div class="li"><span class="ic">🤿</span><div class="tx"><strong>Snorkel gear:</strong> Bring from home. The rocky edges of Amalfi and Positano beaches are excellent for snorkelling. Alex and Cyril will use constantly.</div></div>
+      <div class="li"><span class="ic">🧴</span><div class="tx"><strong>Sun protection:</strong> SPF50 all 8. Late May: 26–33°C. Hats mandatory at Pompeii. Gio especially.</div></div>
+      <div class="li"><span class="ic">📱</span><div class="tx"><strong>Download before flying:</strong> Google Maps offline (Bologna, Tuscany, Naples/Amalfi, Rome) · Pompeii Sites app · Trenitalia app · traghettiamalfi.it bookmarked.</div></div>
+      <div class="li"><span class="ic">💊</span><div class="tx"><strong>Medical:</strong> Travel insurance all 8 (mandatory). Motion sickness tablets — the SS163 coastal road can be winding for rear passengers. Children's paracetamol. Basic first aid.</div></div>
+    </div>
+  </div>
+  <button class="ask-btn" onclick="sendPrompt('Help me compare Hotel Santa Caterina vs Hotel Miramalfi vs Hotel Marina Riviera in Amalfi for 8 people — what are the specific room configurations, sea view options, and price differences?')">Amalfi hotel comparison ↗</button>
+  <button class="ask-btn" onclick="sendPrompt('What is the best way to book the Amalfi to Salerno ferry and the Salerno to Pompeii train for 8 people? Can I book in advance or do I just show up?')">Pompeii ferry + train booking ↗</button>
+  <button class="ask-btn" onclick="sendPrompt('Give me a detailed Naples Da Michele pizza stop plan — where to park, how long the queue typically is in May, how to order, and what else to see in Naples in the 1.5 hours we have.')">Naples pizza stop details ↗</button>
+</div>
+
+</div>
+<div class="footer">Noujaims &amp; Eids · Option D · Bologna BLQ in · Rome FCO out · May 22–31 · Siena · Florence · Pienza · Amalfi town · Pompeii · Positano · Rome</div>
+
+<script>
+function go(id){
+  document.querySelectorAll('.day-section').forEach(s=>s.classList.remove('visible'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  const el=document.getElementById('s-'+id);
+  if(el) el.classList.add('visible');
+  const map={overview:0,d1:1,d2:2,d3:3,d4:4,d5:5,d6:6,d7:7,d8:8,d9:9,d10:10,logistics:11};
+  const tabs=document.querySelectorAll('.tab-btn');
+  if(map[id]!==undefined&&tabs[map[id]])tabs[map[id]].classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
